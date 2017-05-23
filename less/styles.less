@@ -180,7 +180,7 @@ header {
   background-color: #fff;
   height: 420px;
   bottom: -520px;
-  right: 20px;
+  right: 80px;
   transition: bottom 1000ms;
   z-index: 2;
   padding: 0;
@@ -356,7 +356,7 @@ width: 100%;
   color: @white;
   position: fixed;
   bottom: 0;
-  right: 20px;
+  right: 80px;
   cursor: pointer;
   transition: bottom 1000ms;
   z-index: 3;
@@ -397,4 +397,27 @@ input[type=checkbox]:checked ~ .button-pull:after {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.button-top {
+background-color:@blue;
+position:fixed;
+bottom:10px;
+right:20px;
+cursor:pointer;
+display:none;
+color:@white;
+font-size:25px;
+    line-height: 32px;
+    width: 36px;
+    text-align: center;
+    border-radius: 50%;
+z-index: 4;
+transition: 300ms;
+
+&:hover{
+	  background-color:@yellow;
+transition: 300ms;
+}
+
 }
