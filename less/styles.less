@@ -1,0 +1,400 @@
+@white: #fff;
+@blue: #3eb2cf;
+@yellow: #fec20b;
+@black: #000;
+@gray: #e5e5e5;
+
+
+
+.title-big{
+	font-size: 50px;
+	padding-bottom: 45px;
+	margin: 0;
+	color: @black;
+}
+
+@media (max-width: 992px) {
+	.title-big{
+		font-size: 30px;
+	}
+}
+
+.button-blue{
+	color: @white;
+	background-color: @blue;
+	transition: 300ms;
+	border: 2px solid @blue;
+	&:hover{
+		color: @white;
+		background-color: @yellow;
+		transition: 300ms;
+		border: 2px solid @yellow;
+		text-decoration: none;
+	}
+}
+
+.button-transparent{
+	color: @yellow;
+	background-color: transparent;
+	transition: 300ms;
+	border: 2px solid @yellow;
+	&:hover{
+		color: @white;
+		background-color: @blue;
+		transition: 300ms;
+		text-decoration: none;
+		border: 2px solid @blue;
+	}
+}
+
+.item{
+	perspective: 1px;
+	height: 100vh;
+	background-size: cover;
+}
+
+.carousel-info{
+	text-align: left;
+	margin-top: 200px;
+	float: right;
+}
+
+@media (max-width: 992px) {
+	.carousel-info{
+		text-align: center;
+		margin-top: 150px;
+	}
+}
+
+.content-carousel{
+	padding-bottom: 20px;
+}
+
+.carousel-nav{
+	display: inline-block;
+	margin: auto;
+}
+
+.button-block{
+	padding: 5px 15px 5px 0;
+	display: inline-block;
+	margin: auto;
+}
+
+.button{
+	padding: 15px 27px;
+	border-radius: 30px;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+}
+
+.carousel-indicators {
+
+	li{
+		border: 2px solid @yellow;
+		transition: 300ms;
+			&:hover{
+		background-color: @yellow;
+		transition: 300ms;
+	}
+	}
+		.active {
+		background-color: @yellow;
+	}
+}
+
+
+/* Header setting */
+
+header {
+	width: 100%;
+	padding-top: 10px;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	z-index: 1;
+	transition: 300ms;
+}
+
+.brand{
+	width: 20%;
+	float: left;
+}
+
+.img-brand{
+	width: 70px;
+	height: 70px;
+}
+
+.sticky-header {
+
+	background-color: @white;
+	position: fixed;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18);
+	transition: 300ms;
+
+
+	.brand{
+		display: none;
+	}
+
+	.menu{
+		text-align: center;
+		width: 100%;
+		li{
+			margin: 10px 15px 10px 15px;
+		}
+	}
+}
+
+.menu{
+	text-align: right;
+	font-size: 16px;
+	width: 80%;
+	float: left;
+	ul{
+		list-style-type: none;
+	}
+	li{
+		display: inline-block;
+		margin: 25px 15px 0 15px;
+	}
+	li:last-child{
+		margin-right: 0;
+	}
+	a{
+		color: @black;
+		transition: 300ms;
+		&:hover{
+			color: @yellow;
+			transition: 300ms;
+		}
+	}
+}
+
+.pull-panel {
+  position: fixed;
+  width: 300px;
+  background-color: #fff;
+  height: 420px;
+  bottom: -520px;
+  right: 20px;
+  transition: bottom 1000ms;
+  z-index: 2;
+  padding: 0;
+  overflow: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.header-pull-panel {
+	background-color: @blue;
+	color: @white;
+	padding: 10px 20px;
+	label{
+		float: right;
+		cursor: pointer;
+			transition: 300ms;
+		&:hover{
+			margin-top: 2px;
+			transition: 300ms;
+			opacity: 0.8;
+		}
+	}
+}
+
+.pull-panel-content{
+	padding: 5px 10px;
+
+	h4{
+		font-size: 14px;
+	}
+
+	form{
+	height: 230px;
+}
+	input,
+textarea {
+width: 100%;
+margin-top: 10px;
+}
+
+input[type='email'],
+input[type='text'] {
+  background-color: @white;
+  padding: 10px;
+  border: 1px solid @gray;
+  transition: all 0.2s ease-out;
+  box-shadow: none;
+  outline: none;
+}
+input[type='email']:focus, input[type='email']:active,
+input[type='text']:focus,
+input[type='text']:active {
+  border: 1px solid @blue;
+}
+input[type='email']:focus + label:before, input[type='email']:active + label:before,
+input[type='text']:focus + label:before,
+input[type='text']:active + label:before {
+  color: @blue;
+}
+input[type='email'] + label,
+input[type='text'] + label {
+  display: block;
+  margin-top: calc(-30px);
+  margin-bottom: 10px;
+  pointer-events: none;
+}
+input[type='email'] + label:before,
+input[type='text'] + label:before {
+  display: inline-block;
+  color: @gray;
+  margin: 0 calc(10px);
+  white-space: nowrap;
+  transition-duration: 0.2s;
+  transition-delay: 0;
+  transition-timing-function: ease-out;
+  transform-origin: left center;
+}
+
+input[type='text'] + label:before{
+	  content: 'You Name';
+}
+
+input[type='email'] + label:before{
+  content: 'You Email';
+}
+
+input[type='email']:focus + label:before,
+input[type='email'].active + label:before, 
+input[type='email']:valid + label:before,
+input[type='text']:focus + label:before,
+input[type='text'].active + label:before,
+input[type='text']:valid + label:before {
+  background: @white;
+  line-height: 1;
+  transform: translateY(calc(-45px / 2 - 1px/2)) scale(0.8, 0.8);
+}
+
+input[type='email']:valid,
+input[type='text']:valid {
+  border: 1px solid @blue;
+}
+input[type='email']:valid + label:before,
+input[type='text']:valid + label:before {
+  color: @blue;
+}
+
+input[type='text']:valid + label:before{
+	  content: 'You Name';
+}
+
+input[type='email']:valid + label:before{
+	  content: 'You Email';
+}
+
+textarea {
+  border: 1px solid @gray;
+  padding: 10px;
+  height: 100px;
+  transition: all 0.2s ease-out;
+  box-shadow: none;
+  resize: none;
+  outline: none;
+}
+textarea:focus, textarea:active {
+  border: 1px solid @blue;
+}
+textarea:focus + label:before, textarea:active + label:before {
+  color: @blue;
+}
+textarea + label {
+  display: block;
+  margin-top: calc(-90px);
+  margin-bottom: 0px;
+  pointer-events: none;
+}
+textarea + label:before {
+  content: 'You Massage';
+  display: inline-block;
+  color: @gray;
+  margin: 0 calc(10px);
+  white-space: nowrap;
+  transition-duration: 0.2s;
+  transition-delay: 0;
+  transition-timing-function: ease-out;
+  transform-origin: left center;
+
+}
+textarea:focus + label:before, textarea.active + label:before, textarea:valid + label:before {
+  background: @white;
+  line-height: 1;
+  transform: translateY(calc(-45px / 2 - 1px/2)) scale(0.8, 0.8);
+}
+
+textarea:valid {
+  border: 1px solid @blue;
+}
+textarea:valid + label:before {
+  content: 'You Massage';
+  color: @blue;
+}
+
+button{
+width: 100%;
+}
+
+}
+
+.pull-panel-check{
+  display: none;
+}
+
+.button-pull {
+  background-color: @blue;
+  color: @white;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  cursor: pointer;
+  transition: bottom 1000ms;
+  z-index: 3;
+  margin: 0;
+      border-radius: 8px 8px 0 0;
+      padding: 10px 20px;
+      display: table-cell;
+      		transition: 1000ms;
+      	.fa{
+				vertical-align: middle;
+	}
+	span{
+		vertical-align: middle;
+	  margin-left: 12px;
+	}
+	&:hover{
+		box-shadow: 0 3px 15px 0 @black;
+		transition: 1000ms;
+	}
+}
+
+.pull-panel-check:checked ~ .button-pull {
+  bottom: -100px;
+}
+
+.pull-panel-check:checked ~ .pull-panel {
+  bottom: 0;
+}
+
+.button-pull:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ 
+input[type=checkbox]:checked ~ .button-pull:after {
+    padding: 4px 11px 5px 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
