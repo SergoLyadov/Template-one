@@ -2,9 +2,7 @@
 @blue: #3eb2cf;
 @yellow: #fec20b;
 @black: #000;
-@gray: #e5e5e5;
-
-
+@gray: #888888;
 
 .title-big{
 	font-size: 50px;
@@ -17,6 +15,10 @@
 	.title-big{
 		font-size: 30px;
 	}
+}
+
+section{
+	padding: 50px 0 50px 0;
 }
 
 .button-blue{
@@ -420,4 +422,32 @@ transition: 300ms;
 transition: 300ms;
 }
 
+}
+
+.section-about {
+	h2{
+	font-size: 45px;
+	color: @blue;
+	font-weight: bold;
+}
+.content-block{
+	p{
+		color: @gray;
+		padding-bottom: 20px;
+	}
+    .button{
+    		color: @blue;
+	background-color: transparent;
+	transition: 300ms;
+	border: 2px solid @blue;
+	width: 50%;
+	&:hover{
+		color: @white;
+		background-color: @blue;
+		transition: 300ms;
+		text-decoration: none;
+		border: 2px solid @blue;
+	}
+    }
+}
 }
