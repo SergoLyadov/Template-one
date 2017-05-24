@@ -9,6 +9,9 @@
     font-size: 30px;
   }
 }
+section {
+  padding: 100px 0 100px 0;
+}
 .button-blue {
   color: #fff;
   background-color: #3eb2cf;
@@ -156,9 +159,9 @@ header {
   position: fixed;
   width: 300px;
   background-color: #fff;
-  height: 500px;
-  bottom: -600px;
-  right: 20px;
+  height: 420px;
+  bottom: -520px;
+  right: 80px;
   -webkit-transition: bottom 1000ms;
   transition: bottom 1000ms;
   z-index: 2;
@@ -186,6 +189,151 @@ header {
 .pull-panel-content {
   padding: 5px 10px;
 }
+.pull-panel-content h4 {
+  font-size: 14px;
+}
+.pull-panel-content form {
+  height: 230px;
+}
+.pull-panel-content input,
+.pull-panel-content textarea {
+  width: 100%;
+  margin-top: 10px;
+}
+.pull-panel-content input[type='email'],
+.pull-panel-content input[type='text'] {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #888888;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+.pull-panel-content input[type='email']:focus,
+.pull-panel-content input[type='email']:active,
+.pull-panel-content input[type='text']:focus,
+.pull-panel-content input[type='text']:active {
+  border: 1px solid #3eb2cf;
+}
+.pull-panel-content input[type='email']:focus + label:before,
+.pull-panel-content input[type='email']:active + label:before,
+.pull-panel-content input[type='text']:focus + label:before,
+.pull-panel-content input[type='text']:active + label:before {
+  color: #3eb2cf;
+}
+.pull-panel-content input[type='email'] + label,
+.pull-panel-content input[type='text'] + label {
+  display: block;
+  margin-top: calc(-30px);
+  margin-bottom: 10px;
+  pointer-events: none;
+}
+.pull-panel-content input[type='email'] + label:before,
+.pull-panel-content input[type='text'] + label:before {
+  display: inline-block;
+  color: #888888;
+  margin: 0 calc(10px);
+  white-space: nowrap;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.pull-panel-content input[type='text'] + label:before {
+  content: 'You Name';
+}
+.pull-panel-content input[type='email'] + label:before {
+  content: 'You Email';
+}
+.pull-panel-content input[type='email']:focus + label:before,
+.pull-panel-content input[type='email'].active + label:before,
+.pull-panel-content input[type='email']:valid + label:before,
+.pull-panel-content input[type='text']:focus + label:before,
+.pull-panel-content input[type='text'].active + label:before,
+.pull-panel-content input[type='text']:valid + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.pull-panel-content input[type='email']:valid,
+.pull-panel-content input[type='text']:valid {
+  border: 1px solid #3eb2cf;
+}
+.pull-panel-content input[type='email']:valid + label:before,
+.pull-panel-content input[type='text']:valid + label:before {
+  color: #3eb2cf;
+}
+.pull-panel-content input[type='text']:valid + label:before {
+  content: 'You Name';
+}
+.pull-panel-content input[type='email']:valid + label:before {
+  content: 'You Email';
+}
+.pull-panel-content textarea {
+  border: 1px solid #888888;
+  padding: 10px;
+  height: 100px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  outline: none;
+}
+.pull-panel-content textarea:focus,
+.pull-panel-content textarea:active {
+  border: 1px solid #3eb2cf;
+}
+.pull-panel-content textarea:focus + label:before,
+.pull-panel-content textarea:active + label:before {
+  color: #3eb2cf;
+}
+.pull-panel-content textarea + label {
+  display: block;
+  margin-top: calc(-90px);
+  margin-bottom: 0px;
+  pointer-events: none;
+}
+.pull-panel-content textarea + label:before {
+  content: 'You Massage';
+  display: inline-block;
+  color: #888888;
+  margin: 0 calc(10px);
+  white-space: nowrap;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.pull-panel-content textarea:focus + label:before,
+.pull-panel-content textarea.active + label:before,
+.pull-panel-content textarea:valid + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.pull-panel-content textarea:valid {
+  border: 1px solid #3eb2cf;
+}
+.pull-panel-content textarea:valid + label:before {
+  content: 'You Massage';
+  color: #3eb2cf;
+}
+.pull-panel-content button {
+  width: 100%;
+}
 .pull-panel-check {
   display: none;
 }
@@ -194,7 +342,7 @@ header {
   color: #fff;
   position: fixed;
   bottom: 0;
-  right: 20px;
+  right: 80px;
   cursor: pointer;
   -webkit-transition: bottom 1000ms;
   transition: bottom 1000ms;
@@ -236,56 +384,110 @@ input[type=checkbox]:checked ~ .button-pull:after {
   top: 0;
   right: 0;
 }
-body {
-  font-family: 'Lato', sans-serif;
-  color: white;
-  background-color: teal;
+.button-top {
+  background-color: #3eb2cf;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-size: 25px;
+  line-height: 32px;
+  width: 36px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 4;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
-h1 {
-  font-size: 60px;
-  margin: 0px;
-  padding: 0px;
+.button-top:hover {
+  background-color: #fec20b;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
-h3 {
-  margin: 0px;
-  padding: 0px;
-  color: #999;
+.section-about h2 {
+  font-size: 45px;
+  color: #3eb2cf;
+  font-weight: bold;
 }
-div.wrap {
-  width: 500px;
+.section-about .content-block p {
+  color: #888888;
+  padding-bottom: 20px;
+}
+.section-about .content-block .button {
+  color: #3eb2cf;
+  background-color: transparent;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  border: 2px solid #3eb2cf;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.section-about .content-block .button:hover {
+  color: #fff;
+  background-color: #3eb2cf;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  text-decoration: none;
+  border: 2px solid #3eb2cf;
+}
+@media (max-width: 992px) {
+  .section-about {
+    text-align: center;
+  }
+}
+.video-block button {
+  padding: 0;
+  border: none;
+}
+.img-icon-youtube {
+  width: 100px;
+  height: 100px;
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  vertical-align: middle;
 }
-div.wrap div {
+.modal-dialog {
   position: relative;
-  margin: 50px 0;
+  width: 800px;
 }
-.test {
-  position: absolute;
+.modal-video {
+  position: fixed;
   top: 0;
-  font-size: 30px;
-  margin: 10px;
-  padding: 0 10px;
-  background-color: teal;
-  -webkit-transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
-  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  left: 0;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
 }
-.active {
-  top: -25px;
-  font-size: 20px;
+.modal-body-video {
+  position: relative;
 }
-input[type=text] {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid white;
-  font-size: 20px;
-  background-color: teal;
-  color: white;
+.close-video {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
 }
-input[type=text]:focus {
-  outline: none;
+.close-video:hover {
+  -webkit-transform: rotate(1turn);
+  transform: rotate(1turn);
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
+}
+.modal-backdrop {
+  background-color: #000;
+  opacity: 0.7 !important;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }

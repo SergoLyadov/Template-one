@@ -21,3 +21,24 @@ jQuery('.button-top').click(function() {
 jQuery('body,html').animate({scrollTop:0},800);
 });
 });
+
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video-placeholder', {
+        width: 800,
+        height: 600,
+        videoId: 'Xa0Q0J5tOP0',
+        playerVars: {
+            color: 'white',
+            playlist: 'taJ60kskkns,FG0fTKAqZ5g'
+        },
+    });
+}
+jQuery('#youtube_player').on('hidden.bs.modal', function (e) {
+player.pauseVideo();
+})
+
+jQuery('#youtube_player').on('shown.bs.modal', function (e) {
+player.playVideo();
+})
