@@ -51,7 +51,7 @@ section{
 }
 
 .button-white{
-  color: @yellow;
+	color: @yellow;
 	background-color: @white;
 	transition: 300ms;
 	border: 2px solid @white;
@@ -111,12 +111,12 @@ section{
 	li{
 		border: 2px solid @yellow;
 		transition: 300ms;
-			&:hover{
-		background-color: @yellow;
-		transition: 300ms;
+		&:hover{
+			background-color: @yellow;
+			transition: 300ms;
+		}
 	}
-	}
-		.active {
+	.active {
 		background-color: @yellow;
 	}
 }
@@ -192,17 +192,17 @@ header {
 }
 
 .pull-panel {
-  position: fixed;
-  width: 300px;
-  background-color: #fff;
-  height: 420px;
-  bottom: -520px;
-  right: 80px;
-  transition: bottom 1000ms;
-  z-index: 2;
-  padding: 0;
-  overflow: auto;
-  border-radius: 8px 8px 0 0;
+	position: fixed;
+	width: 300px;
+	background-color: #fff;
+	height: 420px;
+	bottom: -520px;
+	right: 80px;
+	transition: bottom 1000ms;
+	z-index: 2;
+	padding: 0;
+	overflow: auto;
+	border-radius: 8px 8px 0 0;
 }
 
 .header-pull-panel {
@@ -212,7 +212,7 @@ header {
 	label{
 		float: right;
 		cursor: pointer;
-			transition: 300ms;
+		transition: 300ms;
 		&:hover{
 			margin-top: 2px;
 			transition: 300ms;
@@ -229,165 +229,165 @@ header {
 	}
 
 	form{
-	height: 230px;
-}
+		height: 230px;
+	}
 	input,
-textarea {
-width: 100%;
-margin-top: 10px;
-}
+	textarea {
+		width: 100%;
+		margin-top: 10px;
+	}
 
-input[type='email'],
-input[type='text'] {
-  background-color: @white;
-  padding: 10px;
-  border: 1px solid @gray;
-  transition: all 0.2s ease-out;
-  box-shadow: none;
-  outline: none;
-}
-input[type='email']:focus, input[type='email']:active,
-input[type='text']:focus,
-input[type='text']:active {
-  border: 1px solid @blue;
-}
-input[type='email']:focus + label:before, input[type='email']:active + label:before,
-input[type='text']:focus + label:before,
-input[type='text']:active + label:before {
-  color: @blue;
-}
-input[type='email'] + label,
-input[type='text'] + label {
-  display: block;
-  margin-top: calc(-30px);
-  margin-bottom: 10px;
-  pointer-events: none;
-}
-input[type='email'] + label:before,
-input[type='text'] + label:before {
-  display: inline-block;
-  color: @gray;
-  margin: 0 calc(10px);
-  white-space: nowrap;
-  transition-duration: 0.2s;
-  transition-delay: 0;
-  transition-timing-function: ease-out;
-  transform-origin: left center;
-}
+	input[type='email'],
+	input[type='text'] {
+		background-color: @white;
+		padding: 10px;
+		border: 1px solid @gray;
+		transition: all 0.2s ease-out;
+		box-shadow: none;
+		outline: none;
+	}
+	input[type='email']:focus, input[type='email']:active,
+	input[type='text']:focus,
+	input[type='text']:active {
+		border: 1px solid @blue;
+	}
+	input[type='email']:focus + label:before, input[type='email']:active + label:before,
+	input[type='text']:focus + label:before,
+	input[type='text']:active + label:before {
+		color: @blue;
+	}
+	input[type='email'] + label,
+	input[type='text'] + label {
+		display: block;
+		margin-top: calc(-30px);
+		margin-bottom: 10px;
+		pointer-events: none;
+	}
+	input[type='email'] + label:before,
+	input[type='text'] + label:before {
+		display: inline-block;
+		color: @gray;
+		margin: 0 calc(10px);
+		white-space: nowrap;
+		transition-duration: 0.2s;
+		transition-delay: 0;
+		transition-timing-function: ease-out;
+		transform-origin: left center;
+	}
 
-input[type='text'] + label:before{
-	  content: 'You Name';
-}
+	input[type='text'] + label:before{
+		content: 'You Name';
+	}
 
-input[type='email'] + label:before{
-  content: 'You Email';
-}
+	input[type='email'] + label:before{
+		content: 'You Email';
+	}
 
-input[type='email']:focus + label:before,
-input[type='email'].active + label:before, 
-input[type='email']:valid + label:before,
-input[type='text']:focus + label:before,
-input[type='text'].active + label:before,
-input[type='text']:valid + label:before {
-  background: @white;
-  line-height: 1;
-  transform: translateY(calc(-45px / 2 - 1px/2)) scale(0.8, 0.8);
-}
+	input[type='email']:focus + label:before,
+	input[type='email'].active + label:before, 
+	input[type='email']:valid + label:before,
+	input[type='text']:focus + label:before,
+	input[type='text'].active + label:before,
+	input[type='text']:valid + label:before {
+		background: @white;
+		line-height: 1;
+		transform: translateY(calc(-45px / 2 - 1px/2)) scale(0.8, 0.8);
+	}
 
-input[type='email']:valid,
-input[type='text']:valid {
-  border: 1px solid @blue;
-}
-input[type='email']:valid + label:before,
-input[type='text']:valid + label:before {
-  color: @blue;
-}
+	input[type='email']:valid,
+	input[type='text']:valid {
+		border: 1px solid @blue;
+	}
+	input[type='email']:valid + label:before,
+	input[type='text']:valid + label:before {
+		color: @blue;
+	}
 
-input[type='text']:valid + label:before{
-	  content: 'You Name';
-}
+	input[type='text']:valid + label:before{
+		content: 'You Name';
+	}
 
-input[type='email']:valid + label:before{
-	  content: 'You Email';
-}
+	input[type='email']:valid + label:before{
+		content: 'You Email';
+	}
 
-textarea {
-  border: 1px solid @gray;
-  padding: 10px;
-  height: 100px;
-  transition: all 0.2s ease-out;
-  box-shadow: none;
-  resize: none;
-  outline: none;
-}
-textarea:focus, textarea:active {
-  border: 1px solid @blue;
-}
-textarea:focus + label:before, textarea:active + label:before {
-  color: @blue;
-}
-textarea + label {
-  display: block;
-  margin-top: calc(-90px);
-  margin-bottom: 0px;
-  pointer-events: none;
-}
-textarea + label:before {
-  content: 'You Massage';
-  display: inline-block;
-  color: @gray;
-  margin: 0 calc(10px);
-  white-space: nowrap;
-  transition-duration: 0.2s;
-  transition-delay: 0;
-  transition-timing-function: ease-out;
-  transform-origin: left center;
+	textarea {
+		border: 1px solid @gray;
+		padding: 10px;
+		height: 100px;
+		transition: all 0.2s ease-out;
+		box-shadow: none;
+		resize: none;
+		outline: none;
+	}
+	textarea:focus, textarea:active {
+		border: 1px solid @blue;
+	}
+	textarea:focus + label:before, textarea:active + label:before {
+		color: @blue;
+	}
+	textarea + label {
+		display: block;
+		margin-top: calc(-90px);
+		margin-bottom: 0px;
+		pointer-events: none;
+	}
+	textarea + label:before {
+		content: 'You Massage';
+		display: inline-block;
+		color: @gray;
+		margin: 0 calc(10px);
+		white-space: nowrap;
+		transition-duration: 0.2s;
+		transition-delay: 0;
+		transition-timing-function: ease-out;
+		transform-origin: left center;
 
-}
-textarea:focus + label:before, textarea.active + label:before, textarea:valid + label:before {
-  background: @white;
-  line-height: 1;
-  transform: translateY(calc(-45px / 2 - 1px/2)) scale(0.8, 0.8);
-}
+	}
+	textarea:focus + label:before, textarea.active + label:before, textarea:valid + label:before {
+		background: @white;
+		line-height: 1;
+		transform: translateY(calc(-45px / 2 - 1px/2)) scale(0.8, 0.8);
+	}
 
-textarea:valid {
-  border: 1px solid @blue;
-}
-textarea:valid + label:before {
-  content: 'You Massage';
-  color: @blue;
-}
+	textarea:valid {
+		border: 1px solid @blue;
+	}
+	textarea:valid + label:before {
+		content: 'You Massage';
+		color: @blue;
+	}
 
-button{
-width: 100%;
-}
+	button{
+		width: 100%;
+	}
 
 }
 
 .pull-panel-check{
-  display: none;
+	display: none;
 }
 
 .button-pull {
-  background-color: @blue;
-  color: @white;
-  position: fixed;
-  bottom: 0;
-  right: 80px;
-  cursor: pointer;
-  transition: bottom 1000ms;
-  z-index: 3;
-  margin: 0;
-      border-radius: 8px 8px 0 0;
-      padding: 10px 20px;
-      display: table-cell;
-      		transition: 1000ms;
-      	.fa{
-				vertical-align: middle;
+	background-color: @blue;
+	color: @white;
+	position: fixed;
+	bottom: 0;
+	right: 80px;
+	cursor: pointer;
+	transition: bottom 1000ms;
+	z-index: 3;
+	margin: 0;
+	border-radius: 8px 8px 0 0;
+	padding: 10px 20px;
+	display: table-cell;
+	transition: 1000ms;
+	.fa{
+		vertical-align: middle;
 	}
 	span{
 		vertical-align: middle;
-	  margin-left: 12px;
+		margin-left: 12px;
 	}
 	&:hover{
 		box-shadow: 0 3px 15px 0 @black;
@@ -396,88 +396,88 @@ width: 100%;
 }
 
 .pull-panel-check:checked ~ .button-pull {
-  bottom: -100px;
+	bottom: -100px;
 }
 
 .pull-panel-check:checked ~ .pull-panel {
-  bottom: 0;
+	bottom: 0;
 }
 
 .button-pull:after {
-    position: absolute;
-    top: 0;
-    right: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
- 
+
 input[type=checkbox]:checked ~ .button-pull:after {
-    padding: 4px 11px 5px 4px;
-    position: absolute;
-    top: 0;
-    right: 0;
+	padding: 4px 11px 5px 4px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .button-top {
-background-color:@blue;
-position:fixed;
-bottom:10px;
-right:20px;
-cursor:pointer;
-display:none;
-color:@white;
-font-size:25px;
-    line-height: 32px;
-    width: 36px;
-    text-align: center;
-    border-radius: 50%;
-z-index: 4;
-transition: 300ms;
+	background-color:@blue;
+	position:fixed;
+	bottom:10px;
+	right:20px;
+	cursor:pointer;
+	display:none;
+	color:@white;
+	font-size:25px;
+	line-height: 32px;
+	width: 36px;
+	text-align: center;
+	border-radius: 50%;
+	z-index: 4;
+	transition: 300ms;
 
-&:hover{
-	  background-color:@yellow;
-transition: 300ms;
-}
+	&:hover{
+		background-color:@yellow;
+		transition: 300ms;
+	}
 
 }
 
 .section-about {
 	h2{
-	color: @blue;
-}
-.content-block{
-	p{
-		color: @gray;
-		padding-bottom: 20px;
+		color: @blue;
 	}
-    .button{
-    		color: @blue;
-	background-color: transparent;
-	transition: 300ms;
-	border: 2px solid @blue;
-	width: 50%;
-	margin-bottom: 10px;
-	&:hover{
-		color: @white;
-		background-color: @blue;
-		transition: 300ms;
-		text-decoration: none;
-		border: 2px solid @blue;
+	.content-block{
+		p{
+			color: @gray;
+			padding-bottom: 20px;
+		}
+		.button{
+			color: @blue;
+			background-color: transparent;
+			transition: 300ms;
+			border: 2px solid @blue;
+			width: 50%;
+			margin-bottom: 10px;
+			&:hover{
+				color: @white;
+				background-color: @blue;
+				transition: 300ms;
+				text-decoration: none;
+				border: 2px solid @blue;
+			}
+		}
 	}
-    }
-}
 }
 
 @media (max-width: 992px) {
-  .section-about{
-  text-align: center;
-  }
+	.section-about{
+		text-align: center;
+	}
 }
 
 
 .video-block{
- button{
- 	padding: 0;
- 	border: none;
- }
+	button{
+		padding: 0;
+		border: none;
+	}
 }
 
 .img-icon-youtube{
@@ -486,8 +486,8 @@ transition: 300ms;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-  transform: translate(-50%, -50%);
-  }
+	transform: translate(-50%, -50%);
+}
 
 
 .modal-dialog{
@@ -496,16 +496,16 @@ transition: 300ms;
 }
 
 .modal-video {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1050;
-    left: 0;
-    display: none;
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
-    outline: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1050;
+	left: 0;
+	display: none;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
 }
 
 .modal-body-video{
@@ -513,40 +513,40 @@ transition: 300ms;
 }
 
 .close-video{
-	    position: fixed;
+	position: fixed;
 	top: 10px;
 	right: 10px;
 	color: @white;
 	padding: 0;
-cursor: pointer;
-background: 0 0;
-border: 0;
-&:hover{
-transform: rotate(1turn);
-transition: 1000ms;
-}
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	&:hover{
+		transform: rotate(1turn);
+		transition: 1000ms;
+	}
 }
 
 .modal-backdrop{
-		background-color: @black;
-		opacity: 0.7 !important;
-		filter: blur(5px);
+	background-color: @black;
+	opacity: 0.7 !important;
+	filter: blur(5px);
 }
 
 
 
 
 .our-program{
-background-color: @blue;
+	background-color: @blue;
 	h2{
-	color: @white;
-	text-align: center;
-}
-p{
-	color: @white;
-	text-align: center;
-	padding-bottom: 45px;
-}
+		color: @white;
+		text-align: center;
+	}
+	p{
+		color: @white;
+		text-align: center;
+		padding-bottom: 45px;
+	}
 }
 
 .blocks-program{
@@ -554,14 +554,14 @@ p{
 		width: 100%;
 	}
 	.button{
-margin-top: 45px;
+		margin-top: 45px;
 	}
 }
 
 @media (max-width: 992px) {
-.blocks-program{
-  max-width: 50%;
-  }
+	.blocks-program{
+		max-width: 50%;
+	}
 }
 
 
@@ -591,8 +591,8 @@ margin-top: 45px;
 
 .features{
 	h2{
-	color: @blue;
-	text-align: center;
+		color: @blue;
+		text-align: center;
 	}
 	p{
 		text-align: center;
@@ -624,23 +624,36 @@ margin-top: 45px;
 }
 
 @media (max-width: 992px) {
-.features-item{
- div{
-  display: block;
-  text-align: center;
-  }
-  .fa{
-  	padding: 0 0 20px 0;
-  }
-}
+	.features-item{
+		div{
+			display: block;
+			text-align: center;
+		}
+		.fa{
+			padding: 0 0 20px 0;
+		}
+	}
 }
 
 
 .events{
 	background-color: @lightgray;
 	h2{
-	color: @blue;
-	text-align: center;
+		color: @blue;
+		text-align: center;
+	}
+	.button{
+		color: @white;
+		background-color: @yellow;
+		transition: 300ms;
+		border: 2px solid @yellow;
+		&:hover{
+			color: @white;
+			background-color: @blue;
+			transition: 300ms;
+			text-decoration: none;
+			border: 2px solid @blue;
+		}
 	}
 }
 
@@ -655,20 +668,20 @@ margin-top: 45px;
 		width: 100%;
 	}
 	.date-event{
-					color: @white;
+		color: @white;
 		background-color: @blue;
 		.day{
 			font-weight: bold;
 			font-size: 30px;
 		}
 		.mounth{
-font-size: 14px;
+			font-size: 14px;
 		}
 		.time{
 			font-weight: bold;
 		}
 	}
-		a{
+	a{
 		color: @yellow;
 		transition: 300ms;
 		font-weight: bold;
@@ -682,12 +695,208 @@ font-size: 14px;
 		a{
 			color: @gray;
 			transition: 300ms;
-		font-weight: normal;
+			font-weight: normal;
 			&:hover{
 				color: @blue;
-			transition: 300ms;
+				transition: 300ms;
 				text-decoration: none;
 			}
 		}
 	}
 }
+
+.img-event-block{
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 89px;
+	top: 42px;
+	transition: 300ms;
+	&:hover{
+		opacity: 0.5;
+		background-color: @blue;
+	}
+}
+
+
+.say-us{
+	background-color: transparent;
+	background-image: url(../images/bg-say.jpg);
+}
+
+.say-us-block{
+	padding: 0 150px 0 150px;
+	text-align: center;
+	p{
+		color: @white;
+		font-size: 22px;
+		font-style: italic;
+	}
+	h4{
+		color: @white;
+		font-weight: bold;
+	}
+	.slick-prev{
+		position: absolute;
+		cursor: pointer;
+		color: transparent;
+		left: 35%;
+		bottom: -20px;
+		border: none;
+		outline: none;
+		background: transparent;
+	}
+
+	.slick-next {
+		position: absolute;
+		cursor: pointer;
+		color: transparent;
+		bottom: -20px;
+		right: 35%;
+		border: none;
+		outline: none;
+		background: transparent;
+	}
+
+	.slick-prev:before{
+		width: 20px;
+		color: @white !important;
+		background-color: @yellow;
+		border-radius: 50%;
+		font-family: FontAwesome;
+		color: black;
+		position: absolute;
+		content: "\f060";
+		font-size: 14px;
+		transition: 300ms;
+	}
+
+	.slick-next:before{
+		width: 20px;
+		color: @white !important;
+		background-color: @yellow;
+		border-radius: 50%;
+		font-family: FontAwesome;
+		color: black;
+		position: absolute;
+		content: "\f061";
+		font-size: 14px;
+		transition: 300ms;
+	}
+	.slick-prev:hover:before,
+	.slick-next:hover:before{
+		background-color: @blue !important;
+		transition: 300ms;
+	}
+}
+
+@media (max-width: 992px) {
+	.say-us-block{
+		padding: 0;
+	}
+}
+
+
+.gallery{
+	padding: 0;
+	.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+img{
+	width: 100%;
+}
+}
+
+.test{
+	position: relative;
+}
+
+
+    .view{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #000;
+      opacity: 0;
+      transition: 500ms;
+    }
+
+    .view:hover{
+      opacity: 0.5;
+    }
+
+    .view:before,
+    .view:after{
+      position: absolute;
+      content: "";
+    }
+
+    .view:before{
+      top: 10px;
+      left: 50%;
+      right: 50%;
+      bottom: 10px;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transition: 800ms;
+    }
+
+    .view:hover:before{
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      transition: 800ms;
+    }
+
+    .view:after{
+      top: 50%;
+      left: 10px;
+      right: 10px;
+      bottom: 50%;
+      border-right: 2px solid #fff;
+      border-left: 2px solid #fff;
+      transition: 800ms;
+    }
+
+    .view:hover:after{
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      transition: 800ms;
+    }
+
+    .view-icon{
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 5vh;
+    color: #fff;
+    transition: 800ms all ease;
+    z-index: 2;
+}
+
+  .view:hover .view-icon{
+    top: 50%;
+    opacity: 1;
+  }
+
