@@ -707,15 +707,19 @@ input[type=checkbox]:checked ~ .button-pull:after {
 
 .img-event-block{
 	position: absolute;
-	left: 15px;
-	right: 15px;
-	bottom: 89px;
-	top: 42px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
 	transition: 300ms;
 	&:hover{
 		opacity: 0.5;
 		background-color: @blue;
 	}
+}
+
+.img-event{
+	position: relative;
 }
 
 
@@ -934,16 +938,71 @@ z-index: 1050;
     color: @white;
 }
 
+.contact-us{
+	text-align: center;
+	.fa{
+		color: @blue;
+		padding-bottom: 20px;
+	}
+	p{
+		color: @black;
+		font-size: 18px;
+		padding-bottom: 45px;
+	}
+	.social-icon{
+		.fa{
+			border-radius: 50%;
+			width: 50px;
+			margin: 0 20px 0 20px;
+			padding: 10px;
+			color: @gray;
+			background-color: #e5e5e5;
+				transition: 300ms;
+			&:hover{
+				transition: 300ms;
+color: #fff;
+			}
+		}
+		.fa-facebook{
+			&:hover{
+background-color: #395b98;
+			}
+		}
+			.fa-twitter{
+				&:hover{
+background-color: #2ca7e0;
+				}
+			}
+			.fa-google{
+				&:hover{
+background: #d95139;
+				}
+			}
+			.fa-instagram{
+				&:hover{
+background-image: linear-gradient(-45deg, #ffdc80, #e1306c 50%, #405de6);
+background-repeat: no-repeat;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFDC80', endColorstr='#FF405DE6', GradientType=1);
+				}
+			}
+		a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+	}
+}
 
-/*.maps{
+
+.maps{
 	padding: 0;
 	.no-scroll-maps {
   background:transparent; 
   position:relative; 
   width:100%;
-  height:550px;
-  top:550px;
-  margin-top:-550px;
+  height:450px;
+  top:450px;
+  margin-top:-450px;
 }
 }
-*/
+
