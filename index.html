@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/simplelightbox.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
 	<!-- 	<link rel="stylesheet" type="text/css" href="css/styles.css"> -->
 	<link rel="stylesheet" type="text/less" href="less/styles.less">
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -20,6 +22,59 @@
 <body>
 
 	<header>
+
+<input type="checkbox" id="mobile" class="mobile-menu-check">
+<label class="button-menu" for="mobile">
+</label>
+<div class="mobile-block">
+<div class="mobile-brand-block">
+	<img class="img-responsive" src="images/logo.png" alt="" />
+				<div class="mobile-menu">
+				<ul>
+					<li class="menu-item">
+			   <a href="#">
+           Home
+					</a>
+					</li>
+					<li class="menu-item">
+				<a href="#">
+          Elements
+					</a>
+					</li>
+					<li class="menu-item">
+			   <a href="#">
+					Pages
+					</a>
+					</li>
+					<li class="menu-item">
+			   <a href="#">
+					News
+				 </a>
+					</li>
+					<li class="menu-item">
+			   <a href="#">
+          Gallery
+					</a>
+					</li>
+					<li class="menu-item">
+			   <a href="#">
+					Shop
+					</a>
+					</li>
+					<li class="menu-item">
+			   <a href="#">
+					Donate
+					</a>
+					</li>
+					<li class="menu-item">
+			   <a href="#">
+				Contacts
+					</a>
+					</li>
+				</ul>
+			</div>
+</div>
+</div>
 
 		<input type="checkbox" id="hmt" class="pull-panel-check">
 		<label class="button-pull" for="hmt">
@@ -48,6 +103,47 @@
 			</div>
 		</div>
 
+<div class="top-header-block">
+	<div class="container">
+		<div class="row">
+<div class="col-md-6">
+<div class="top-contact">
+	<i class="fa fa-phone" aria-hidden="true"></i>
+	<span>+38(099)708-15-34</span>
+<i class="fa fa-envelope" aria-hidden="true"></i>
+<span>lyadovoj1992@gmail.com</span>
+</div>
+</div>
+<div class="col-md-6">
+<div class="top-sign">
+
+<!-- <div class="search">
+	<input type="submit" class="search-btn fa ib-m">
+	<div class="search-slide ib-m">
+		<input type="text" placeholder="Enter your search" class="ib-m">
+div class="search-close ib-m"><i class="fa fa-times" aria-hidden="true"></i>
+</div>
+	</div>
+</div> -->
+
+<button id="toggle-search" class="header-button"><i class="fa fa-search" aria-hidden="true"></i>
+</button>
+			<form id="search-form">
+				<fieldset>
+					<input name="search-terms" type="search" placeholder="Search" />
+				</fieldset>
+				<input type="submit" value="Ok" />
+			</form>
+
+	<a href="#">Sign In</a>
+	<a href="#">Sign Up</a>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="bottom-header-block">
 		<div class="container-fluid">
 			<div class="brand">
 				<div class="img-brand">
@@ -85,6 +181,7 @@
 		</div>
 		<div class="button-top">
 			<i class="fa fa-arrow-up" aria-hidden="true"></i>
+		</div>
 		</div>
 	</header>
 
@@ -511,9 +608,20 @@
 		</div>
 </section>
 
-<section class="contact-us">
+<section class="maps">
+	<div class="container-fluid">
+		<div class="row">
+<div class="no-scroll-maps" onClick="style.pointerEvents='none'"></div>
+<h2>Google maps</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7245803.831398851!2d-88.30831830899247!3d27.531765072304736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c1766591562abf%3A0xf72e13d35bc74ed0!2sFlorida%2C+USA!5e0!3m2!1sen!2sua!4v1495745478450" allowfullscreen></iframe>
+		</div>
+	</div>
+</section>
+
+<footer>
 	<div class="container">
 		<div class="row">
+		<div class="contact-us">
 			<div class="col-md-4">
 				<i class="fa fa-3x fa-phone" aria-hidden="true"></i>
 				<p>1-800-1234-567</p>
@@ -541,18 +649,11 @@ CA 94117-1080 USA</p>
 <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
 </a>
 			</div>
+			<p class="copy">© 2017 All Rights Reserved Terms of Use and <a href="#">Privacy Policy</a></p>
+			</div>
 		</div>
 	</div>
-</section>
-
-<section class="maps">
-	<div class="container-fluid">
-		<div class="row">
-<div class="no-scroll-maps" onClick="style.pointerEvents='none'"></div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7245803.831398851!2d-88.30831830899247!3d27.531765072304736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c1766591562abf%3A0xf72e13d35bc74ed0!2sFlorida%2C+USA!5e0!3m2!1sen!2sua!4v1495745478450" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-	</div>
-</section>
+</footer>
 
   	<script src="js/scripts-ini.js"></script>  
   <script type="text/javascript">
