@@ -128,7 +128,6 @@ section{
 
 header {
 	width: 100%;
-	padding-top: 10px;
 	background-color: transparent;
 	position: absolute;
 	top: 0;
@@ -138,24 +137,26 @@ header {
 }
 
 .top-header-block{
+	height: 40px;
 border-bottom: 1px solid @white;
-padding-bottom: 10px;
 .fa{
 	color: @blue;
 }
 	.top-contact{
+    line-height:40px;
 background-color: transparent;
-font-size: 12px;
+font-size: 1.3vh;
 span{
 	padding-left: 5px;
 	padding-right: 20px;
 }
 }
 .top-sign{
+	font-size: 1.5vh;
+    line-height:40px;
 	text-align: right;
 	.fa{
 		color: @black;
-		padding-right: 20px;
 	}
 	a{
 		transition: 300ms;
@@ -526,8 +527,17 @@ input[type=checkbox]:checked ~ .button-pull:after {
 	button{
 		padding: 0;
 		border: none;
+		&:hover{
+			.img-icon-youtube{
+					width: 110px;
+	height: 110px;
+		transition: 300ms;
+			}
+		}
 	}
 }
+
+
 
 .img-icon-youtube{
 	width: 100px;
@@ -766,6 +776,8 @@ input[type=checkbox]:checked ~ .button-pull:after {
 		background-color: @blue;
 	}
 }
+
+
 
 .img-event{
 	position: relative;
@@ -1252,8 +1264,9 @@ background-position: -60px 40px;
     position:relative;
     min-width:50px;
     width:0%;
+    height: 40px;
     overflow:hidden;
-    transition: width 0.3s;
+    transition: width 1000ms;
     float: right;
 }
 
@@ -1262,24 +1275,25 @@ background-position: -60px 40px;
     right:0;
     border:0;
     outline:0;
-    background:#dcddd8;
+    background-color:transparent;
     width:100%;
     margin:0;
     padding:0px 55px 0px 20px;
     font-size:20px;
-    color:red;
+    color:@blue;
+    height: 40px;
 }
 .searchbox-input::-webkit-input-placeholder {
-    color: #d74b4b;
+    color: @blue;
 }
 .searchbox-input:-moz-placeholder {
-    color: #d74b4b;
+    color: @blue;
 }
 .searchbox-input::-moz-placeholder {
-    color: #d74b4b;
+    color: @blue;
 }
 .searchbox-input:-ms-input-placeholder {
-    color: #d74b4b;
+    color: @blue;
 }
 
 .searchbox-icon,
@@ -1287,23 +1301,30 @@ background-position: -60px 40px;
     width:50px;
     position:absolute;
     top:0;
-    font-size:22px;
+    font-size:18px;
     right:0;
     padding:0;
     margin:0;
     border:0;
     outline:0;
-    line-height:50px;
+    line-height:40px;
     text-align:center;
     cursor:pointer;
-    color:#dcddd8;
-    background:#172b3c;
+    color:@black;
+    background-color:transparent;
+    transition: 300ms;
+    font-family: FontAwesome;
+    &:hover{
+    	.fa{
+    		color: @yellow;
+    transition: 300ms;
+    	}
+    }
 }
 
-
-
 .searchbox-open{
-    width:70%;
+    width:100%;
+    height: 40px;
 }
 
 .byline{
