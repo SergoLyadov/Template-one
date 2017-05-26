@@ -100,27 +100,53 @@ jQuery('.multiple-items').slick({
   slidesToScroll: 3
 });
 
-(function($) {
-
-    // Handle click on toggle search button
-    $('#toggle-search').click(function() {
-      $('#search-form, #toggle-search').toggleClass('open');
-      return false;
-    });
-
-    // Handle click on search submit button
-    $('#search-form input[type=submit]').click(function() {
-      $('#search-form, #toggle-search').toggleClass('open');
-      return true;
-    });
-
-    // Clicking outside the search form closes it
-    $(document).click(function(event) {
-      var target = $(event.target);
-      
-      if (!target.is('#toggle-search') && !target.closest('#search-form').size()) {
-        $('#search-form, #toggle-search').removeClass('open');
-      }
-    });
-
-})(jQuery);
+    function buttonUp(){
+         var valux = $('.sb-search-input').val(); 
+            valux = $.trim(valux).length;
+            if(valux !== 0){
+                $('.sb-search-submit').css('z-index','99');
+            } else{
+                $('.sb-search-input').val(''); 
+                $('.sb-search-submit').css('z-index','-999');
+            }
+    }
+    
+      jQuery(document).ready(function($){
+            var submitIcon = $('.searchbox-icon');
+            var inputBox = $('.searchbox-input');
+            var searchBox = $('.searchbox');
+            var isOpen = false;
+            submitIcon.click(function(){
+                if(isOpen == false){
+                    searchBox.addClass('searchbox-open');
+                    inputBox.focus();
+                    isOpen = true;
+                } else {
+                    searchBox.removeClass('searchbox-open');
+                    inputBox.focusout();
+                    isOpen = false;
+                }
+            });  
+             submitIcon.mouseup(function(){
+                    return false;
+                });
+            searchBox.mouseup(function(){
+                    return false;
+                });
+            $(document).mouseup(function(){
+                    if(isOpen == true){
+                        $('.searchbox-icon').css('display','block');
+                        submitIcon.click();
+                    }
+                });
+        });
+            function buttonUp(){
+                var inputVal = $('.searchbox-input').val();
+                inputVal = $.trim(inputVal).length;
+                if( inputVal !== 0){
+                    $('.searchbox-icon').css('display','none');
+                } else {
+                    $('.searchbox-input').val('');
+                    $('.searchbox-icon').css('display','block');
+                }
+            }
