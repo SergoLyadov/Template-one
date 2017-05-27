@@ -46,7 +46,9 @@ player.playVideo();
 jQuery('.say-us-block').slick({
   speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true
+  adaptiveHeight: true,
+prevArrow: jQuery('.prev'),
+nextArrow: jQuery('.next')
 });
 
  jQuery(function(){
