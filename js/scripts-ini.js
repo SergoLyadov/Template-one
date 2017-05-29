@@ -152,3 +152,38 @@ jQuery('.multiple-items').slick({
                     $('.searchbox-icon').css('display','block');
                 }
             }
+
+$('.center-slick').slick({
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ],
+  prevArrow: jQuery('.prev-program'),
+nextArrow: jQuery('.next-program')
+});
