@@ -1693,7 +1693,7 @@ padding-left: 20px;
 	input {
 		width: 400px;
 		margin-top: 10px;
-		border-radius: 5px;
+		border-radius: 30px;
 	}
 	input[type='text'] {
 		background-color: @background_color_4;
@@ -1855,7 +1855,9 @@ padding-left: 20px;
 	}
 	button{
 		width: 100%;
+		height: 45px;
 		margin-top: 10px;
+		border-radius: 30px;
 	}
 	p{
 		padding-top: 10px;
@@ -1880,7 +1882,7 @@ padding-left: 20px;
 	input {
 		width: 400px;
 		margin-top: 10px;
-		border-radius: 5px;
+		border-radius: 30px;
 	}
 	input[type='text'] {
 		background-color: @background_color_4;
@@ -2106,7 +2108,9 @@ padding-left: 20px;
 	}
 	button{
 		width: 100%;
+		height: 45px;
 		margin-top: 10px;
+		border-radius: 30px;
 	}
 }
 
@@ -2152,5 +2156,569 @@ padding-left: 20px;
 			&:hover {
 				text-decoration: none;
 			}
+		}
+	}
+
+	/* contacts */
+
+	.contacts{
+		p{
+			color: @color_8;
+		}
+		form {
+		height: 230px;
+	}
+	input {
+		width: 100%;
+		margin-top: 10px;
+		border-radius: 30px;
+	}
+	textarea {
+		width: 100%;
+		margin-top: 10px;
+		border: 1px solid #888888;
+		padding: 10px;
+		height: 100px;
+		-webkit-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		resize: none;
+		outline: none;
+		border-radius: 30px;
+		&:focus {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+				}
+			}
+		}
+		&:active {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+				}
+			}
+		}
+		&+label {
+			display: block;
+			margin-top: calc(-90px);
+			margin-bottom: 0px;
+			pointer-events: none;
+			&:before {
+				content: 'You Massage';
+				display: inline-block;
+				color: @color_8;
+				margin: 0 calc(10px);
+				white-space: nowrap;
+				-webkit-transition-duration: 0.2s;
+				transition-duration: 0.2s;
+				-webkit-transition-delay: 0;
+				transition-delay: 0;
+				-webkit-transition-timing-function: ease-out;
+				transition-timing-function: ease-out;
+				-webkit-transform-origin: left center;
+				transform-origin: left center;
+			}
+		}
+		&:valid {
+			&+label {
+				&:before {
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					content: 'You Massage';
+					color: @color_4;
+				}
+			}
+			border: 1px solid #3eb2cf;
+		}
+	}
+	input.fname[type='text'] {
+		background-color: @background_color_4;
+		padding: 10px;
+		border: 1px solid #888888;
+		-webkit-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		outline: none;
+		&:focus {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+				}
+			}
+		}
+		&:active {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+				}
+			}
+		}
+		&+label {
+			display: block;
+			margin-top: calc(-30px);
+			margin-bottom: 10px;
+			pointer-events: none;
+			&:before {
+				display: inline-block;
+				color: @color_8;
+				margin: 0 calc(10px);
+				white-space: nowrap;
+				-webkit-transition-duration: 0.2s;
+				transition-duration: 0.2s;
+				-webkit-transition-delay: 0;
+				transition-delay: 0;
+				-webkit-transition-timing-function: ease-out;
+				transition-timing-function: ease-out;
+				-webkit-transform-origin: left center;
+				transform-origin: left center;
+				content: 'First Name';
+			}
+		}
+		&:valid {
+			&+label {
+				&:before {
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					color: @color_4;
+					content: 'First Name';
+				}
+			}
+			border: 1px solid #3eb2cf;
+		}
+	}
+	input.lname[type='text'] {
+		background-color: @background_color_4;
+		padding: 10px;
+		border: 1px solid #888888;
+		-webkit-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		outline: none;
+		&:focus {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+				}
+			}
+		}
+		&:active {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+				}
+			}
+		}
+		&+label {
+			display: block;
+			margin-top: calc(-30px);
+			margin-bottom: 10px;
+			pointer-events: none;
+			&:before {
+				display: inline-block;
+				color: @color_8;
+				margin: 0 calc(10px);
+				white-space: nowrap;
+				-webkit-transition-duration: 0.2s;
+				transition-duration: 0.2s;
+				-webkit-transition-delay: 0;
+				transition-delay: 0;
+				-webkit-transition-timing-function: ease-out;
+				transition-timing-function: ease-out;
+				-webkit-transform-origin: left center;
+				transform-origin: left center;
+				content: 'Last Name';
+			}
+		}
+		&:valid {
+			&+label {
+				&:before {
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					color: @color_4;
+					content: 'Last Name';
+				}
+			}
+			border: 1px solid #3eb2cf;
+		}
+	}
+		input[type='email'] {
+		background-color: @background_color_4;
+		padding: 10px;
+		border: 1px solid #888888;
+		-webkit-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		outline: none;
+		&:focus {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+				}
+			}
+		}
+		&:active {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+				}
+			}
+		}
+		&+label {
+			display: block;
+			margin-top: calc(-30px);
+			margin-bottom: 10px;
+			pointer-events: none;
+			&:before {
+				display: inline-block;
+				color: @color_8;
+				margin: 0 calc(10px);
+				white-space: nowrap;
+				-webkit-transition-duration: 0.2s;
+				transition-duration: 0.2s;
+				-webkit-transition-delay: 0;
+				transition-delay: 0;
+				-webkit-transition-timing-function: ease-out;
+				transition-timing-function: ease-out;
+				-webkit-transform-origin: left center;
+				transform-origin: left center;
+				content: 'You Email';
+			}
+		}
+		&:valid {
+			&+label {
+				&:before {
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					color: @color_4;
+					content: 'You Email';
+				}
+			}
+			border: 1px solid #3eb2cf;
+		}
+	}
+		input.phone[type='text'] {
+		background-color: @background_color_4;
+		padding: 10px;
+		border: 1px solid #888888;
+		-webkit-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		outline: none;
+		&:focus {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+				}
+			}
+		}
+		&:active {
+			border: 1px solid #3eb2cf;
+			&+label {
+				&:before {
+					color: @color_4;
+				}
+			}
+		}
+		&+label {
+			display: block;
+			margin-top: calc(-30px);
+			margin-bottom: 10px;
+			pointer-events: none;
+			&:before {
+				display: inline-block;
+				color: @color_8;
+				margin: 0 calc(10px);
+				white-space: nowrap;
+				-webkit-transition-duration: 0.2s;
+				transition-duration: 0.2s;
+				-webkit-transition-delay: 0;
+				transition-delay: 0;
+				-webkit-transition-timing-function: ease-out;
+				transition-timing-function: ease-out;
+				-webkit-transform-origin: left center;
+				transform-origin: left center;
+				content: 'You Phone';
+			}
+		}
+		&:valid {
+			&+label {
+				&:before {
+					background: #fff;
+					line-height: 1;
+					-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					transform: translateY(calc(-23px)) scale(0.8, 0.8);
+					color: @color_4;
+					content: 'You Phone';
+				}
+			}
+			border: 1px solid #3eb2cf;
+		}
+	}
+	input[type='email'].active {
+		&+label {
+			&:before {
+				background: #fff;
+				line-height: 1;
+				-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+				transform: translateY(calc(-23px)) scale(0.8, 0.8);
+			}
+		}
+	}
+	input[type='text'].active {
+		&+label {
+			&:before {
+				background: #fff;
+				line-height: 1;
+				-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+				transform: translateY(calc(-23px)) scale(0.8, 0.8);
+			}
+		}
+	}
+	textarea.active {
+		&+label {
+			&:before {
+				background: #fff;
+				line-height: 1;
+				-webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+				transform: translateY(calc(-23px)) scale(0.8, 0.8);
+			}
+		}
+	}
+	button {
+		width: 200px;
+		height: 45px;
+		border-radius: 30px;
+		 margin-top: 80px;
+	}
+	}
+
+	.side-bar{
+		.block-contact{
+word-wrap: break-word;
+}
+.contacts{
+	padding-bottom: 50px;
+	.fa{
+		color: @color_4;
+	}
+	span{
+		color: @color_8;
+	}
+}
+}
+
+	.social-icon-contact {
+		.fa {
+			border-radius: 50%;
+			width: 35px;
+			margin: 0 5px 0 5px;
+			padding: 10px;
+			color: @color_8;
+			background-color: @background_color_8;
+			-webkit-transition: 300ms;
+			transition: 300ms;
+			text-align: center;
+			&:hover {
+				-webkit-transition: 300ms;
+				transition: 300ms;
+				color: @color_2;
+			}
+		}
+		.fa-facebook {
+			&:hover {
+				background-color: @background_color_9;
+			}
+		}
+		.fa-twitter {
+			&:hover {
+				background-color: @background_color_10;
+			}
+		}
+		.fa-google {
+			&:hover {
+				background: #d95139;
+			}
+		}
+		.fa-instagram {
+			&:hover {
+				background-image: linear-gradient(-45deg, #ffdc80, #e1306c 50%, #405de6);
+				background-repeat: no-repeat;
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFDC80', endColorstr='#FF405DE6', GradientType=1);
+			}
+		}
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	/* shop */
+
+	.shop{
+		.rating{
+			color: @color_3;
+		}
+		p{
+			padding-top: 20px;
+			color: @color_8;
+		}
+		.quantity{
+			color: @color_1;
+			text-align: center;
+			width: 80px;
+			height: 50px;
+			margin-left: 20px;
+		}
+		.price{
+			font-size: 25px;
+			font-weight: bold;
+			color: @color_1;
+			padding-bottom: 20px;
+		}
+		.price-old{
+color: @color_8;
+text-decoration: line-through;
+padding-left: 30px;
+		}
+		button{
+			width: 50%;
+		}
+		.tab-content{
+			.description-item{
+				color: @color_8;
+			}
+			td{
+				border-top: 2px solid #ddd;
+			}
+			tr:last-child{
+				th{
+					border: none;
+				}
+			}
+		}
+	}
+
+	.block-comment{
+		img{
+			width: 80px;
+			height: 80px;
+		}
+		.comment{
+padding-left: 30px;
+padding-top: 30px;
+		}
+		.comment-second-level{
+			padding-left: 100px;
+		}
+			.person-name-comment{
+				font-size: 20px;
+				color: @color_3;
+			}
+			.txt-comment{
+				color: @color_8;
+				padding-top: 0;
+			}
+		}
+		.date-comment{
+			font-style: italic;
+				color: @color_8;
+				padding-left: 0;
+		}
+		.reply-button{
+			width: 100px;
+			color: @color_3;
+			background-color: transparent;
+			border: none;
+			margin-left: 50px;
+			&:hover{
+				color: @color_4;
+			}
+	}
+
+	.card-product{
+		border: 1px solid @color_8;
+		text-align: center;
+		height: 500px;
+		transition: 300ms;
+		.product-nav{
+		button{
+			opacity: 0;
+			border: none;
+			background-color: transparent;
+		}
+	}
+		img{
+			width: 100%;
+		}
+		h5{
+			padding-top: 10px;
+			padding-bottom: 30px;
+			a{
+							color: @color_3;
+							&:hover{
+								color: @color_4;
+								text-decoration: none;
+							}
+			}
+		}
+		&:hover{
+					.product-nav{
+					button{
+			margin: 30px 0 0 0;
+			opacity: 0.5;
+			transition: 300ms;
+			&:hover{
+				color: @color_4;
+				opacity: 1;
+			}
+		}
+	}
+			height: 550px;
+			transition:300ms;
+    box-shadow: rgba(0, 0, 0, 0.317647) 0px 2px 14px 0px;
 		}
 	}
