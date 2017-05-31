@@ -1563,7 +1563,7 @@ footer .copy {
 .sign-in input {
   width: 400px;
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 .sign-in input[type='text'] {
   background-color: #fff;
@@ -1701,7 +1701,9 @@ footer .copy {
 }
 .sign-in button {
   width: 100%;
+  height: 45px;
   margin-top: 10px;
+  border-radius: 30px;
 }
 .sign-in p {
   padding-top: 10px;
@@ -1724,7 +1726,7 @@ footer .copy {
 .sign-up input {
   width: 400px;
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 .sign-up input[type='text'] {
   background-color: #fff;
@@ -1920,7 +1922,9 @@ footer .copy {
 }
 .sign-up button {
   width: 100%;
+  height: 45px;
   margin-top: 10px;
+  border-radius: 30px;
 }
 .social-icon-sign .fa {
   border-radius: 50%;
@@ -1953,4 +1957,516 @@ footer .copy {
 }
 .social-icon-sign a:hover {
   text-decoration: none;
+}
+/* contacts */
+.contacts p {
+  color: #888888;
+}
+.contacts form {
+  height: 230px;
+}
+.contacts input {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+.contacts textarea {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #888888;
+  padding: 10px;
+  height: 100px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  outline: none;
+  border-radius: 30px;
+}
+.contacts textarea:focus {
+  border: 1px solid #3eb2cf;
+}
+.contacts textarea:focus + label:before {
+  color: #3eb2cf;
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.contacts textarea:active {
+  border: 1px solid #3eb2cf;
+}
+.contacts textarea:active + label:before {
+  color: #3eb2cf;
+}
+.contacts textarea + label {
+  display: block;
+  margin-top: calc(-90px);
+  margin-bottom: 0px;
+  pointer-events: none;
+}
+.contacts textarea + label:before {
+  content: 'You Massage';
+  display: inline-block;
+  color: #888888;
+  margin: 0 calc(10px);
+  white-space: nowrap;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.contacts textarea:valid {
+  border: 1px solid #3eb2cf;
+}
+.contacts textarea:valid + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  content: 'You Massage';
+  color: #3eb2cf;
+}
+.contacts input.fname[type='text'] {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #888888;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+.contacts input.fname[type='text']:focus {
+  border: 1px solid #3eb2cf;
+}
+.contacts input.fname[type='text']:focus + label:before {
+  color: #3eb2cf;
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.contacts input.fname[type='text']:active {
+  border: 1px solid #3eb2cf;
+}
+.contacts input.fname[type='text']:active + label:before {
+  color: #3eb2cf;
+}
+.contacts input.fname[type='text'] + label {
+  display: block;
+  margin-top: calc(-30px);
+  margin-bottom: 10px;
+  pointer-events: none;
+}
+.contacts input.fname[type='text'] + label:before {
+  display: inline-block;
+  color: #888888;
+  margin: 0 calc(10px);
+  white-space: nowrap;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  content: 'First Name';
+}
+.contacts input.fname[type='text']:valid {
+  border: 1px solid #3eb2cf;
+}
+.contacts input.fname[type='text']:valid + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  color: #3eb2cf;
+  content: 'First Name';
+}
+.contacts input.lname[type='text'] {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #888888;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+.contacts input.lname[type='text']:focus {
+  border: 1px solid #3eb2cf;
+}
+.contacts input.lname[type='text']:focus + label:before {
+  color: #3eb2cf;
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.contacts input.lname[type='text']:active {
+  border: 1px solid #3eb2cf;
+}
+.contacts input.lname[type='text']:active + label:before {
+  color: #3eb2cf;
+}
+.contacts input.lname[type='text'] + label {
+  display: block;
+  margin-top: calc(-30px);
+  margin-bottom: 10px;
+  pointer-events: none;
+}
+.contacts input.lname[type='text'] + label:before {
+  display: inline-block;
+  color: #888888;
+  margin: 0 calc(10px);
+  white-space: nowrap;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  content: 'Last Name';
+}
+.contacts input.lname[type='text']:valid {
+  border: 1px solid #3eb2cf;
+}
+.contacts input.lname[type='text']:valid + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  color: #3eb2cf;
+  content: 'Last Name';
+}
+.contacts input[type='email'] {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #888888;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+.contacts input[type='email']:focus {
+  border: 1px solid #3eb2cf;
+}
+.contacts input[type='email']:focus + label:before {
+  color: #3eb2cf;
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.contacts input[type='email']:active {
+  border: 1px solid #3eb2cf;
+}
+.contacts input[type='email']:active + label:before {
+  color: #3eb2cf;
+}
+.contacts input[type='email'] + label {
+  display: block;
+  margin-top: calc(-30px);
+  margin-bottom: 10px;
+  pointer-events: none;
+}
+.contacts input[type='email'] + label:before {
+  display: inline-block;
+  color: #888888;
+  margin: 0 calc(10px);
+  white-space: nowrap;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  content: 'You Email';
+}
+.contacts input[type='email']:valid {
+  border: 1px solid #3eb2cf;
+}
+.contacts input[type='email']:valid + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  color: #3eb2cf;
+  content: 'You Email';
+}
+.contacts input.phone[type='text'] {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #888888;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+.contacts input.phone[type='text']:focus {
+  border: 1px solid #3eb2cf;
+}
+.contacts input.phone[type='text']:focus + label:before {
+  color: #3eb2cf;
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.contacts input.phone[type='text']:active {
+  border: 1px solid #3eb2cf;
+}
+.contacts input.phone[type='text']:active + label:before {
+  color: #3eb2cf;
+}
+.contacts input.phone[type='text'] + label {
+  display: block;
+  margin-top: calc(-30px);
+  margin-bottom: 10px;
+  pointer-events: none;
+}
+.contacts input.phone[type='text'] + label:before {
+  display: inline-block;
+  color: #888888;
+  margin: 0 calc(10px);
+  white-space: nowrap;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  content: 'You Phone';
+}
+.contacts input.phone[type='text']:valid {
+  border: 1px solid #3eb2cf;
+}
+.contacts input.phone[type='text']:valid + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  color: #3eb2cf;
+  content: 'You Phone';
+}
+.contacts input[type='email'].active + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.contacts input[type='text'].active + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.contacts textarea.active + label:before {
+  background: #fff;
+  line-height: 1;
+  -webkit-transform: translateY(calc(-23px)) scale(0.8, 0.8);
+  transform: translateY(calc(-23px)) scale(0.8, 0.8);
+}
+.contacts button {
+  width: 200px;
+  height: 45px;
+  border-radius: 30px;
+  margin-top: 80px;
+}
+.side-bar .block-contact {
+  word-wrap: break-word;
+}
+.side-bar .contacts {
+  padding-bottom: 50px;
+}
+.side-bar .contacts .fa {
+  color: #3eb2cf;
+}
+.side-bar .contacts span {
+  color: #888888;
+}
+.social-icon-contact .fa {
+  border-radius: 50%;
+  width: 35px;
+  margin: 0 5px 0 5px;
+  padding: 10px;
+  color: #888888;
+  background-color: #e5e5e5;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  text-align: center;
+}
+.social-icon-contact .fa:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  color: #fff;
+}
+.social-icon-contact .fa-facebook:hover {
+  background-color: #395b98;
+}
+.social-icon-contact .fa-twitter:hover {
+  background-color: #2ca7e0;
+}
+.social-icon-contact .fa-google:hover {
+  background: #d95139;
+}
+.social-icon-contact .fa-instagram:hover {
+  background-image: linear-gradient(-45deg, #ffdc80, #e1306c 50%, #405de6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFDC80', endColorstr='#FF405DE6', GradientType=1);
+}
+.social-icon-contact a:hover {
+  text-decoration: none;
+}
+/* shop */
+.shop .rating {
+  color: #fec20b;
+}
+.shop p {
+  padding-top: 20px;
+  color: #888888;
+}
+.shop .quantity {
+  color: #000;
+  text-align: center;
+  width: 80px;
+  height: 50px;
+  margin-left: 20px;
+}
+.shop button {
+  width: 50%;
+}
+.tabs {
+  padding-top: 0;
+}
+.tabs .tab-content .description-item {
+  color: #888888;
+}
+.tabs .tab-content td {
+  border-top: 2px solid #ddd;
+}
+.tabs .tab-content tr:last-child th {
+  border: none;
+}
+.block-comment img {
+  width: 80px;
+  height: 80px;
+}
+.block-comment .comment {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.block-comment .comment-second-level {
+  padding-left: 100px;
+}
+.block-comment .person-name-comment {
+  font-size: 20px;
+  color: #fec20b;
+}
+.block-comment .txt-comment {
+  color: #888888;
+  padding-top: 0;
+}
+.date-comment {
+  font-style: italic;
+  color: #888888;
+  padding-left: 0;
+}
+.reply-button {
+  width: 100px;
+  color: #fec20b;
+  background-color: transparent;
+  border: none;
+  margin-left: 50px;
+}
+.reply-button:hover {
+  color: #3eb2cf;
+}
+.new {
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: -35px;
+  top: -10px;
+  background-color: #3eb2cf;
+  font-size: 20px;
+  height: 50px;
+  line-height: 70px;
+  width: 100px;
+  color: #fff;
+  font-weight: bold;
+}
+.card-product {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #888888;
+  text-align: center;
+  height: 500px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.card-product .product-nav button {
+  opacity: 0;
+  border: none;
+  background-color: transparent;
+}
+.card-product img {
+  width: 100%;
+}
+.card-product h5 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.card-product h5 a {
+  color: #fec20b;
+}
+.card-product h5 a:hover {
+  color: #3eb2cf;
+  text-decoration: none;
+}
+.card-product:hover {
+  height: 550px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.317647) 0px 2px 14px 0px;
+  box-shadow: rgba(0, 0, 0, 0.317647) 0px 2px 14px 0px;
+}
+.card-product:hover .product-nav button {
+  margin: 30px 0 0 0;
+  opacity: 0.5;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.card-product:hover .product-nav button:hover {
+  color: #3eb2cf;
+  opacity: 1;
+}
+.related-product h4 {
+  padding-bottom: 50px;
+}
+.price {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000 !important;
+  padding-bottom: 20px;
+}
+.price-old {
+  color: #888888;
+  text-decoration: line-through;
+  padding-left: 30px;
 }

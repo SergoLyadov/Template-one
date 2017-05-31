@@ -56,12 +56,46 @@ body {
 section {
 	padding: 100px 0 100px 0;
 }
-.button-small {
-	padding: 7px 12px;
-	border-radius: 5px;
+.button-default{
+border-radius: 5px;
+}
+.button-round{
+border-radius: 15px;
+}
+.button-circle{
+border-radius: 30px;
+}
+.button-ex-small {
+	padding: 2px 6px;
 	display: inline-block;
 	text-align: center;
 	font-weight: bold;
+}
+.button-small {
+	padding: 7px 12px;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	.fa{
+		position: absolute;
+		top: 50%;
+		right: 0;
+	transform: translate(-50%, -50%);
+	}
+}
+.button-big {
+	padding: 15px 27px;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	.fa{
+		position: absolute;
+		top: 50%;
+		right: 0;
+	transform: translate(-50%, -50%);
+	}
 }
 .button-blue {
 	color: @color_2;
@@ -91,6 +125,21 @@ section {
 		transition: 300ms;
 		border: 2px solid @color_4;
 		text-decoration: none;
+	}
+}
+.button-transparent {
+	color: @color_3;
+	background-color: @background_color_3;
+	-webkit-transition: 300ms;
+	transition: 300ms;
+	border: 2px solid #fec20b;
+	&:hover {
+		color: @color_2;
+		background-color: @background_color_1;
+		-webkit-transition: 300ms;
+		transition: 300ms;
+		text-decoration: none;
+		border: 2px solid #3eb2cf;
 	}
 }
 .button-transparent-v1 {
@@ -2613,21 +2662,14 @@ word-wrap: break-word;
 			height: 50px;
 			margin-left: 20px;
 		}
-		.price{
-			font-size: 25px;
-			font-weight: bold;
-			color: @color_1;
-			padding-bottom: 20px;
-		}
-		.price-old{
-color: @color_8;
-text-decoration: line-through;
-padding-left: 30px;
-		}
 		button{
 			width: 50%;
 		}
-		.tab-content{
+	}
+
+	.tabs{
+		padding-top: 0;
+				.tab-content{
 			.description-item{
 				color: @color_8;
 			}
@@ -2678,12 +2720,28 @@ padding-top: 30px;
 				color: @color_4;
 			}
 	}
-
+.badge {
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: -35px;
+    top: -10px;
+    background-color: @background_color_1;
+    font-size: 20px;
+    height: 50px;
+    line-height: 70px;
+    width: 100px;
+    color: @color_2;
+    font-weight: bold;
+}
 	.card-product{
+		overflow: hidden;
+		position: relative;
 		border: 1px solid @color_8;
 		text-align: center;
 		height: 500px;
 		transition: 300ms;
+		margin-bottom: 20px;
 		.product-nav{
 		button{
 			opacity: 0;
@@ -2722,3 +2780,116 @@ padding-top: 30px;
     box-shadow: rgba(0, 0, 0, 0.317647) 0px 2px 14px 0px;
 		}
 	}
+
+	.related-product{
+		h4{
+			padding-bottom: 50px;
+		}
+	}
+
+			.price{
+			font-size: 25px;
+			font-weight: bold;
+			color: @color_1 !important;
+			padding-bottom: 20px;
+		}
+		.price-old{
+color: @color_8;
+text-decoration: line-through;
+padding-left: 30px;
+		}
+
+		/* Shopping Cart */ 
+
+		.shop-cart{
+			thead{
+				padding-top: 10px;
+				padding-bottom: 10px;
+				background-color: @background_color_1;
+				tr{
+					th{
+						border: none;
+						padding-top: 15px;
+						padding-bottom: 15px;
+						color: @color_2;
+					}
+				}
+			}
+			tbody{
+				tr{
+					th{
+						button{
+							border: none;
+							background-color: transparent;
+							color: @color_8;
+							&:hover{
+							color: @color_8;
+							}
+						}
+					}
+				}
+				td{
+					a{
+						color: @color_3;
+						&:hover{
+							color: @color_1;
+							text-decoration: none;
+						}
+					}
+					.price-cart{
+						color: @color_8;
+					}
+					input{
+						border: none;
+						width: 50px;
+					}
+					.price-total-item{
+						font-weight: bold;
+					}
+				}
+			}
+			.total-price{
+				text-align: right;
+				padding-right: 50px;
+					color: @color_8;
+					padding-bottom: 20px;
+				span{
+					color: @color_1;
+					font-size: 18px;
+					font-weight: bold;
+					padding-left: 10px;
+				}
+			}
+			.checkout{
+				text-align: center;
+				a{
+					width: 200px;
+				}
+			}
+		}
+
+		/* Grid System */
+
+		.grid{
+			color: @color_8;
+			background-color: @background_color_8;
+			padding: 20px;
+			border-radius: 10px;
+			p{
+				color: @color_1;
+				font-weight: bold;
+				font-size: 20px;
+			}
+		}
+
+.block-grid{
+	padding-bottom: 20px;
+	display: inline-block;
+}
+
+.block-buttons{
+	text-align: center;
+	button{
+margin: 0 20px 20px 20px;
+	}
+}
