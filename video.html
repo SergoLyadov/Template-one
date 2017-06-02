@@ -243,35 +243,65 @@ Single Product</a>
 <section class="bread">
 	<div class="container-fluid">
 		<div class="row">
-     <h1 class="page-title">Register</h1>
+     <h1 class="page-title">Video</h1>
      <ul>
      	<li><a href="index.html">Home</a></li>
-     	<li class="active">Register</li>
+     	<li class="active">Video</li>
      </ul>
 		</div>
 	</div>
-</section>
+	</section>
 
-<section class="sign-up">
-<div class="container">
-<div class="row">
-<h2 class="title-big">Sign Up</h2>
-				<form action="#">
-					<input type="text" required>
-					<label></label>
-					<input type="password" required>
-					<label></label>
-					<input type="password" required>
-					<label></label>
-					<input type="email" required>
-					<label></label>
-					<div class="text-center">
-					<button type="button" class="button-small button-yellow">Sign Up</button>
-					</div>
-				</form>
-				</div>
+	<section class="video">
+		<div class="container">
+			<div class="row">
+			<div class="video-block-preview">
+				<h2 class="title-big text-center">Video Popover</h2>
+					<div class="video-block-popover">
+						<button type="button" data-toggle="modal" data-target="#youtube_player">
+							<img class="img-responsive img-icon-youtube" src="images/icon-youtube.png" alt="" />
+							<img class="img-responsive" src="images/video-img.jpg" alt="" /></button>
+
+							<div class="modal-video fade" id="youtube_player" tabindex="-1" role="dialog">
+								<div class="modal-dialog" role="document">
+									<button type="button" class="close-video" data-dismiss="modal" aria-label="Close"><i class="fa fa-2x fa-times" aria-hidden="true"></i>
+									</button>
+									<div class="modal-body-video">
+										<div id="video-placeholder"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+									<div class="video-block-preview">
+				<h2 class="title-big text-center">Dynamically Queue Video</h2>
+				<div class="dynamically-video">
+<div class="slider-for">
+<div>
+				<div id="video-dynamically"></div>
+									</div>
+									</div>
+									<div class="slider-nav">
+<div>
+            <img class="thumbnail img-responsive" src="images/cat_video_1.jpg" data-video-id="h14wr4pXZFk" alt="">
+            </div>
+            				<div>
+            <img class="thumbnail img-responsive" src="images/cat_video_2.jpg" data-video-id="KkFnm-7jzOA" alt="">
+            </div>
+            				<div>
+            <img class="thumbnail img-responsive" src="images/cat_video_3.jpg" data-video-id="Ph77yOQFihc" alt="">
+            </div>
+            				<div>
+            <img class="thumbnail img-responsive" src="images/cat_video_3.jpg" data-video-id="Ph77yOQFihc" alt="">
+            </div>
+
 </div>
-</section>
+									</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
 <hr class="line">
 	<footer>
 		<div class="container">

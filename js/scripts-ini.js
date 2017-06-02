@@ -32,6 +32,15 @@ function onYouTubeIframeAPIReady() {
         playerVars: {
             color: 'white',
             playlist: 'taJ60kskkns,FG0fTKAqZ5g'
+        }
+    });
+            player = new YT.Player('video-dynamically', {
+        width: 585,
+        height: 330,
+        videoId: 'h14wr4pXZFk',
+        playerVars: {
+            color: 'white',
+            playlist: 'KkFnm-7jzOA,Ph77yOQFihc'
         },
     });
 }
@@ -42,6 +51,14 @@ player.pauseVideo();
 jQuery('#youtube_player').on('shown.bs.modal', function (e) {
 player.playVideo();
 })
+
+jQuery('.thumbnail').on('click', function () {
+
+    var url = jQuery(this).attr('data-video-id');
+
+    player.cueVideoById(url);
+
+});
 
 jQuery('.say-us-block').slick({
   speed: 300,
@@ -99,7 +116,25 @@ nextArrow: jQuery('.next')
 jQuery('.multiple-items').slick({
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 3
+  slidesToScroll: 3,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ],
 });
 
     function buttonUp(){
@@ -203,4 +238,9 @@ $('.slider-nav').slick({
   centerMode: true,
   arrows: false,
   focusOnSelect: true
+});
+
+
+jQuery( '#dl-menu' ).dlmenu({
+  animationClasses : { classin : 'animation-class-name', classout : 'animation-class-name' }
 });
