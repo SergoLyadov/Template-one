@@ -1,3 +1,6 @@
+ var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+
 jQuery(function($){
   $(window).scroll(function(){
     var winTop = $(window).scrollTop();
@@ -265,4 +268,15 @@ $(function() {
   } 
 
   var accordion = new Accordion($('#accordion'), false);
+});
+
+ jQuery('.slick-slider').slick({
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 5000,
+      prevArrow: $('.prev-slider'),
+      nextArrow: $('.next-slider'),
 });
