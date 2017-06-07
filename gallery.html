@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/simplelightbox.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+	<!-- 	<link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	<link rel="stylesheet" type="text/less" href="less/styles.less">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>  
+	<script src="js/slick.min.js"></script>
+	<script src="js/simple-lightbox.min.js"></script>
+	<script src="js/less.min.js"></script> 
+	<script src="https://www.youtube.com/iframe_api"></script> 
+	<title>Templates</title>
+</head>
+<body>
+
+	<header>
+
+			<input type="checkbox" id="mobile" class="mobile-menu-check">
+		<label class="button-menu" for="mobile">
+		</label>
+		<div class="mobile-block">
+			<div class="sign-mobile">
+				<a href="sign-in.html">Sign In</a>
+				<a href="sign-up.html">Sign Up</a>
+			</div>
+			<div class="mobile-menu">
+<ul id="accordion" class="accordion">
+  <li>
+    <div class="link"><a href="index.html">Home</a></div>
+  </li>
+  <li>
+    <div class="link">Elements<i class="fa fa-chevron-down"></i></div>
+    <ul class="submenu">
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="buttons.html">Buttons</a></li>
+      <li><a href="vedeo.html">Video</a></li>
+    </ul>
+  </li>
+  <li>
+    <div class="link">Pages<i class="fa fa-chevron-down"></i></div>
+    <ul class="submenu">
+      <li><a href="404.html">404</a></li>
+      <li><a href="sign-in.html">Login</a></li>
+      <li><a href="sign-up.html">Register</a></li>
+     <li><a href="about.html">About Us</a></li>
+    </ul>
+  </li>
+    <li>
+    <div class="link"><a href="news.html">News</a></div>
+  </li>
+  <li>
+    <div class="link"><a href="gallery.html">Gallery</a></div>
+  </li>
+  <li>
+    <div class="link">Shop<i class="fa fa-chevron-down"></i></div>
+    <ul class="submenu">
+      <li><a href="product-catalog.html">Product Catalog</a></li>
+      <li><a href="shopping-cart.html">Shopping Cart</a></li>
+      <li><a href="single-product.html">Single Product</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+    </ul>
+  </li>
+  <li>
+    <div class="link"><a href="#">Donate</a></div>
+  </li>
+  <li>
+    <div class="link"><a href="contacts.html">Contacts</a></div>
+  </li>
+</ul>
+
+			</div>
+		</div>
+
+		<input type="checkbox" id="hmt" class="pull-panel-check">
+		<label class="button-pull" for="hmt">
+			<i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+			<span>Contact Us!</span>
+		</label>
+		<div class="pull-panel">
+			<div class="header-pull-panel">
+				<span>Contact Us!</span>
+				<input type="checkbox" class="pull-panel-check">
+				<label class="button-close" for="hmt">
+					<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				</label>
+			</div>
+			<div class="pull-panel-content">
+				<h4 class="text-center">Live help is displayed for demo purposes only. To add it to your store please refer to the template documentation or Olark Live chat official website.</h4>
+				<form action="#">
+					<input type="text" required>
+					<label></label>
+					<input type="email" required>
+					<label></label>
+					<textarea required></textarea>
+					<label></label>
+				</form>
+				<button type="button" class="btn btn-lg button-main">Send</button>
+			</div>
+		</div>
+
+		<div class="top-header-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="top-contact">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<span>+38(099)708-15-34</span>
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<span>lyadovoj1992@gmail.com</span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="top-sign">
+							<div class="col-md-8">
+								<form class="searchbox">
+									<input type="search" placeholder="Search" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+									<button type="submit" class="searchbox-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+									<span class="searchbox-icon"><i class="fa fa-search" aria-hidden="true"></i>
+									</span>
+								</form>
+							</div>
+							<div class="col-md-4">
+								<a href="sign-in.html">Sign In</a>
+								<a href="sign-up.html">Sign Up</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-header-block">
+			<div class="container-fluid">
+				<div class="brand">
+					<div class="img-brand">
+						<img class="img-responsive" src="images/logo.png" alt="" />
+					</div>
+				</div>
+				<div class="menu">
+					<ul>
+						<li class="menu-item">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="menu-item">
+<div class="dropdown">
+  <button id="elements" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Elements
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="elements">
+    <li>
+							<a href="grid.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Grid</a>
+    </li>
+    <li>
+							<a href="buttons.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Buttons</a>
+    </li>
+    <li>
+							<a href="video.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Video</a>
+    </li>
+  </ul>
+</div>
+						</li>
+						<li class="menu-item">
+<div class="dropdown">
+  <button id="pages" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Pages
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="pages">
+    <li>
+							<a href="404.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+404</a>
+    </li>
+    <li>
+							<a href="sign-in.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Login</a>
+    </li>
+    <li>
+							<a href="sign-up.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Register</a>
+    </li>
+    <li>
+							<a href="about.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+About Us</a>
+    </li>
+  </ul>
+</div>
+						</li>
+						<li class="menu-item">
+							<a href="news.html">News</a>
+						</li>
+						<li class="menu-item">
+							<a href="gallery.html">Gallery</a>
+						</li>
+						<li class="menu-item">
+<div class="dropdown">
+  <button id="shop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Shop
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="shop">
+    <li>
+							<a href="product-catalog.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Product Catalog</a>
+    </li>
+    <li>
+							<a href="shopping-cart.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Shopping Card</a>
+    </li>
+    <li>
+							<a href="single-product.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Single Product</a>
+    </li>
+    <li>
+							<a href="checkout.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Checkout</a>
+    </li>
+  </ul>
+</div>
+						</li>
+						<li class="menu-item">
+							<a href="">Donate</a>
+						</li>
+						<li class="menu-item">
+							<a href="contacts.html">Contacts</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="button-top">
+				<i class="fa fa-arrow-up" aria-hidden="true"></i>
+			</div>
+		</div>
+	</header>
+
+<section class="bread">
+	<div class="container-fluid">
+		<div class="row">
+     <h1 class="page-title">Gallery</h1>
+     <ul>
+     	<li><a href="index.html">Home</a></li>
+     	<li class="active">Gallery</li>
+     </ul>
+		</div>
+	</div>
+	</section>
+
+	<section class="gallery">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="multiple-items">
+					<div class="gallery-block-img">
+						<a href="images/appetite-1238569_1920.jpg">
+							<div class="view">
+								<div class="view-icon">
+									<i class="fa fa-eye" aria-hidden="true"></i>
+								</div>
+								<h6 class="caption-gallery text-center">Lorem ipsum dolor sit amet</h6>
+							</div>
+							<img src="images/appetite-1238569_1920.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="gallery-block-img">
+						<a href="images/asparagus-1307604_1920.jpg">
+							<div class="view">
+								<div class="view-icon">
+									<i class="fa fa-eye" aria-hidden="true"></i>
+								</div>
+								<h6 class="caption-gallery text-center">Lorem ipsum dolor sit amet</h6>
+							</div>
+							<img src="images/asparagus-1307604_1920.jpg" alt="">
+						</a>
+					</div>
+					<div class="gallery-block-img">
+						<a href="images/citrus-fruits-1851077_1920.jpg">
+							<div class="view">
+								<div class="view-icon">
+									<i class="fa fa-eye" aria-hidden="true"></i>
+								</div>
+								<h6 class="caption-gallery text-center">Lorem ipsum dolor sit amet</h6>
+							</div>
+							<img src="images/citrus-fruits-1851077_1920.jpg" alt="">
+						</a>
+					</div>
+					<div class="gallery-block-img">
+						<a href="images/dessert-2206626_1920.jpg">
+							<div class="view">
+								<div class="view-icon">
+									<i class="fa fa-eye" aria-hidden="true"></i>
+								</div>
+								<h6 class="caption-gallery text-center">Lorem ipsum dolor sit amet</h6>
+							</div>
+							<img src="images/dessert-2206626_1920.jpg" alt="">
+						</a>
+					</div>
+					<div class="gallery-block-img">
+						<a href="images/dessert-2341634_1920.jpg">
+							<div class="view">
+								<div class="view-icon">
+									<i class="fa fa-eye" aria-hidden="true"></i>
+								</div>
+								<h6 class="caption-gallery text-center">Lorem ipsum dolor sit amet</h6>
+							</div>
+							<img src="images/dessert-2341634_1920.jpg" alt="">
+						</a>
+					</div>
+					<div class="gallery-block-img">
+						<a href="images/pizza-329523_1920.jpg">
+							<div class="view">
+								<div class="view-icon">
+									<i class="fa fa-eye" aria-hidden="true"></i>
+								</div>
+								<h6 class="caption-gallery text-center">Lorem ipsum dolor sit amet</h6>
+							</div>
+							<img src="images/pizza-329523_1920.jpg" alt="">
+						</a>
+					</div>
+				</div>
+		</div>
+		</div>
+	</section>
+
+<hr class="line">
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="contact-us">
+					<div class="col-md-4">
+						<i class="fa fa-3x fa-phone" aria-hidden="true"></i>
+						<p>1-800-1234-567</p>
+					</div>
+					<div class="col-md-4">
+						<i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
+						<p>mail@demolink.org</p>
+					</div>
+					<div class="col-md-4">
+						<i class="fa fa-3x fa-map-marker" aria-hidden="true"></i>
+						<p>2130 Fulton Street San Diego,
+							CA 94117-1080 USA</p>
+						</div>
+						<div class="social-icon">
+							<a href="#">
+								<i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-2x fa-google" aria-hidden="true"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+							</a>
+						</div>
+						<p class="copy">© 2017 All Rights Reserved Terms of Use and <a href="#">Privacy Policy</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/scripts-ini.js"></script>  
+		<script type="text/javascript">
+ jQuery('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+jQuery('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  centerMode: true,
+  arrows: false,
+  focusOnSelect: true
+});
+		</script>
+	</body>
+	</html>
