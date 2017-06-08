@@ -16,3 +16,12 @@ gulp.task('styles', function () {
     .pipe(minifycss())
     .pipe(gulp.dest('css'));
 });
+
+const gulpPostcss = require('gulp-postcss');
+const cssdeclsort = require('css-declaration-sorter');
+ 
+gulp.task('css', function () {
+  return gulp.src('less/*.less')
+    .pipe(gulpPostcss([cssdeclsort({order: 'alphabetically'})]))
+    .pipe(gulp.dest('./'));
+});
