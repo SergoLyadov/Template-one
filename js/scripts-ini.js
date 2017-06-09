@@ -1,7 +1,7 @@
 jQuery(function($){
   $(window).scroll(function(){
     var winTop = $(window).scrollTop();
-    if(winTop >= 55){
+    if(winTop >= 40){
       $("header").addClass("sticky-header");
     }else{
       $("header").removeClass("sticky-header");
@@ -34,15 +34,24 @@ function onYouTubeIframeAPIReady() {
             playlist: 'taJ60kskkns,FG0fTKAqZ5g'
         }
     });
-            player = new YT.Player('video-dynamically', {
+            player2 = new YT.Player('video-dynamically', {
         width: 585,
         height: 330,
         videoId: 'h14wr4pXZFk',
         playerVars: {
             color: 'white',
             playlist: 'KkFnm-7jzOA,Ph77yOQFihc'
-        },
+        }
     });
+            player3 = new YT.Player('player', {
+        width: 585,
+        height: 330,
+        videoId: 'Xa0Q0J5tOP0',
+        playerVars: {
+            color: 'white',
+            playlist: 'taJ60kskkns,FG0fTKAqZ5g'
+        },
+    });   
 }
 jQuery('#youtube_player').on('hidden.bs.modal', function (e) {
 player.pauseVideo();
@@ -52,11 +61,28 @@ jQuery('#youtube_player').on('shown.bs.modal', function (e) {
 player.playVideo();
 })
 
+jQuery('#prev').on('click', function () {
+    player3.previousVideo()
+});
+jQuery('#play').on('click', function () {
+
+    player3.playVideo();
+
+});
+jQuery('#pause').on('click', function () {
+
+    player3.pauseVideo();
+
+});
+jQuery('#next').on('click', function () {
+    player3.nextVideo()
+});
+
 jQuery('.thumbnail').on('click', function () {
 
     var url = jQuery(this).attr('data-video-id');
 
-    player.cueVideoById(url);
+    player2.cueVideoById(url);
 
 });
 
@@ -115,8 +141,10 @@ nextArrow: jQuery('.next')
 
 jQuery('.multiple-items').slick({
   infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
     responsive: [
     {
       breakpoint: 768,
@@ -127,7 +155,7 @@ jQuery('.multiple-items').slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 320,
       settings: {
         arrows: false,
         centerPadding: '40px',
@@ -189,10 +217,12 @@ jQuery('.multiple-items').slick({
             }
 
 $('.center-slick').slick({
-  infinite: false,
+  infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
   speed: 300,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 992,
@@ -272,7 +302,15 @@ jQuery('.slider-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
-  centerMode: true,
+  autoplay: true,
+  autoplaySpeed: 500,
   arrows: false,
   focusOnSelect: true
+});
+
+jQuery('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
 });
