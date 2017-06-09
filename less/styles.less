@@ -284,11 +284,10 @@ section {
 	}
 }
 header {
-	-webkit-transition: 300ms;
 	background-color: @transparent;
 	position: absolute;
 	top: 0;
-	transition: 200ms;
+	transition: 50ms;
 	width: 100%;
 	z-index: 1;
 }
@@ -299,7 +298,7 @@ display: none;
  }
 }
 .top-header-block {
-	background-color: @transparent;
+	background-color: #fafafa;
 	border-bottom: 1px solid @white;
 	height: 40px;
 	.fa {
@@ -393,11 +392,9 @@ display: none;
 }
 .sticky-header {
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18);
-	-webkit-transition: 100ms;
 	background-color: @white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18);
 	position: fixed;
-	transition: 200ms;
 	z-index: 20;
 	.top-header-block {
 		display: none;
@@ -468,6 +465,7 @@ display: none;
 			padding-bottom: 10px;
 			padding-top: 10px;
 			width: 100%;
+			overflow: hidden;
 			a {
 				-webkit-transition: 300ms;
 				color: @white;
