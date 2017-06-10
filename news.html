@@ -37,24 +37,23 @@
     <div class="link"><a href="index.html">Home</a></div>
   </li>
   <li>
-    <div class="link">Elements<i class="fa fa-chevron-down"></i></div>
-    <ul class="submenu">
-      <li><a href="grid.html">Grid</a></li>
-      <li><a href="buttons.html">Buttons</a></li>
-      <li><a href="vedeo.html">Video</a></li>
-    </ul>
-  </li>
-  <li>
     <div class="link">Pages<i class="fa fa-chevron-down"></i></div>
     <ul class="submenu">
       <li><a href="404.html">404</a></li>
       <li><a href="sign-in.html">Login</a></li>
       <li><a href="sign-up.html">Register</a></li>
      <li><a href="about.html">About Us</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="vedeo.html">Video</a></li>
     </ul>
   </li>
-    <li>
-    <div class="link"><a href="news.html">News</a></div>
+  <li>
+    <div class="link">News<i class="fa fa-chevron-down"></i></div>
+    <ul class="submenu">
+      <li><a href="news.html">News Standart</a></li>
+      <li><a href="news-grid.html">News Grid</a></li>
+      <li><a href="news-grid-3-column.html">News Grid 3 Column</a></li>
+    </ul>
   </li>
   <li>
     <div class="link"><a href="gallery.html">Gallery</a></div>
@@ -67,9 +66,6 @@
       <li><a href="single-product.html">Single Product</a></li>
       <li><a href="checkout.html">Checkout</a></li>
     </ul>
-  </li>
-  <li>
-    <div class="link"><a href="#">Donate</a></div>
   </li>
   <li>
     <div class="link"><a href="contacts.html">Contacts</a></div>
@@ -155,28 +151,6 @@
 						</li>
 						<li class="menu-item">
 <div class="dropdown">
-  <button id="elements" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Elements
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="elements">
-    <li>
-							<a href="grid.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-Grid</a>
-    </li>
-    <li>
-							<a href="buttons.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-Buttons</a>
-    </li>
-    <li>
-							<a href="video.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-Video</a>
-    </li>
-  </ul>
-</div>
-						</li>
-						<li class="menu-item">
-<div class="dropdown">
   <button id="pages" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Pages
     <span class="caret"></span>
@@ -198,11 +172,38 @@ Register</a>
 							<a href="about.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
 About Us</a>
     </li>
+    <li>
+							<a href="grid.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Grid</a>
+    </li>
+    <li>
+							<a href="video.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Video</a>
+    </li>
   </ul>
 </div>
 						</li>
 						<li class="menu-item">
-							<a href="news.html">News</a>
+<div class="dropdown">
+  <button id="shop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    News
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="shop">
+    <li>
+							<a href="news.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+News Standart</a>
+    </li>
+    <li>
+							<a href="news-grid.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+News Grid</a>
+    </li>
+    <li>
+							<a href="news-grid-3-column.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+News Grid 3 Column</a>
+    </li>
+  </ul>
+</div>
 						</li>
 						<li class="menu-item">
 							<a href="gallery.html">Gallery</a>
@@ -230,11 +231,8 @@ Single Product</a>
 							<a href="checkout.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
 Checkout</a>
     </li>
-   </ul>
+  </ul>
 </div>
-						</li>
-						<li class="menu-item">
-							<a href="">Donate</a>
 						</li>
 						<li class="menu-item">
 							<a href="contacts.html">Contacts</a>
@@ -254,7 +252,8 @@ Checkout</a>
      <h1 class="page-title">Page news</h1>
      <ul>
      	<li><a href="index.html">Home</a></li>
-     	<li class="active">News</li>
+     	<li><a href="#">News</a></li>
+     	<li class="active">News Standart</li>
      </ul>
 		</div>
 	</div>
@@ -269,12 +268,13 @@ Checkout</a>
 					<img class="img-responsive" src="images/food-715539_1920.jpg" alt="" />
 			  </a>
 					<div class="content-news-block">
-						<h4><a class="title-post" href="single-news.html">Thinking about Spring</a></h4>
+						<h2><a class="title-post" href="single-news.html">Thinking about Spring</a></h2>
 						<p>When we are lucky enough to have a few warm sunny days, many of our thoughts turn to spring ahead. Are those snowbells popping up? Is the dirt soft enough for digging? Did you hear birds on your walk to school?</p>
 						<div class="info-news-block">
-						<div class="col-sm-4"><i class="fa fa-calendar" aria-hidden="true"></i><span>2 days ago</span></div>
-						<div class="col-sm-4"><a class="button-small button-transparent-v1" href="#">Categories</a></div>
-						<div class="col-sm-4"><i class="fa fa-user" aria-hidden="true"></i><span class="author-news">Ronald Austin</span></div>
+						<div class="row">
+						<div class="col-sm-6"><i class="fa fa-calendar" aria-hidden="true"></i><span>2 days ago</span></div>
+						<div class="col-sm-6"><i class="fa fa-user" aria-hidden="true"></i><span class="author-news">Ronald Austin</span></div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -283,12 +283,13 @@ Checkout</a>
 					<img class="img-responsive" src="images/pastries-768715_1920.jpg" alt="" />
 			  </a>
 					<div class="content-news-block">
-						<h4><a class="title-post" href="single-news.html">3 Open-Ended Activities for Preschoolers</a></h4>
+						<h2><a class="title-post" href="single-news.html">3 Open-Ended Activities for Preschoolers</a></h2>
 						<p>In our fast-paced, over-scheduled weeks, it can sometimes be a great benefit to slow down and dig into some good hands-on fun. Instead of packing up and heading for fun away from home, try looking at home for the fun. Here are some simple, inexpensive, ways to have open-ended fun with your young children.</p>
 						<div class="info-news-block">
-						<div class="col-sm-4"><i class="fa fa-calendar" aria-hidden="true"></i><span>2 days ago</span></div>
-						<div class="col-sm-4"><a class="button-small button-transparent-v1" href="#">Categories</a></div>
-						<div class="col-sm-4"><i class="fa fa-user" aria-hidden="true"></i><span class="author-news">Ronald Austin</span></div>
+						<div class="row">
+						<div class="col-sm-6"><i class="fa fa-calendar" aria-hidden="true"></i><span>2 days ago</span></div>
+						<div class="col-sm-6"><i class="fa fa-user" aria-hidden="true"></i><span class="author-news">Ronald Austin</span></div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -297,12 +298,13 @@ Checkout</a>
 					<img class="img-responsive" src="images/pizza-1150031_1920.jpg" alt="" />
 			  </a>
 					<div class="content-news-block">
-						<h4><a class="title-post" href="single-news.html">Exploring Light and Dark</a></h4>
+						<h2><a class="title-post" href="single-news.html">Exploring Light and Dark</a></h2>
 						<p>WThis time of year, we are seeing the first snowfalls and the weather is suddenly colder. Despite the temperature, and the brighter mornings, sunset happens before bedtime. Preschoolers notice these changes and the way that ice or snow makes the world around us so different from day to day. As children bring their observations to school, we bring exploration of light and dark into our curriculum.</p>
 						<div class="info-news-block">
-						<div class="col-sm-4"><i class="fa fa-calendar" aria-hidden="true"></i><span>2 days ago</span></div>
-						<div class="col-sm-4"><a class="button-small button-transparent-v1" href="#">Categories</a></div>
-						<div class="col-sm-4"><i class="fa fa-user" aria-hidden="true"></i><span class="author-news">Ronald Austin</span></div>
+						<div class="row">
+						<div class="col-sm-6"><i class="fa fa-calendar" aria-hidden="true"></i><span>2 days ago</span></div>
+						<div class="col-sm-6"><i class="fa fa-user" aria-hidden="true"></i><span class="author-news">Ronald Austin</span></div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -318,9 +320,10 @@ Checkout</a>
 			</div>
 			<div class="col-md-4">
 			<div class="side-bar">
-			<div class="search-sidebar">
-
-			</div>
+<form class="form-wrapper">
+    <input type="text" id="search" placeholder="Search for..." required>
+    <input type="submit" value="go" id="submit">
+</form>
 			<div class="categories">
 				<h4 class="title-small">Categories</h4>
 				<ul>
@@ -343,8 +346,6 @@ Checkout</a>
 		  </div>
 			<div class="archive-news">
 				<h4 class="title-small">Archive News</h4>
-<div class="col-md-6">
-<div class="row">
 	<ul>
 	<li>
 <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Jun 2016</a>
@@ -361,12 +362,6 @@ Checkout</a>
 	<li>
 <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Feb 2017</a>
 	</li>
-	</ul>
-</div>
-</div>
-<div class="col-md-6">
-<div class="row">
-	<ul>
 	<li>
 <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Jul 2016</a>
 	</li>
@@ -383,8 +378,6 @@ Checkout</a>
 <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Mar 2017</a>
 	</li>
 	</ul>
-</div>
-</div>
 		  </div>
 		  </div>
 			</div>	

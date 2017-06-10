@@ -37,24 +37,23 @@
     <div class="link"><a href="index.html">Home</a></div>
   </li>
   <li>
-    <div class="link">Elements<i class="fa fa-chevron-down"></i></div>
-    <ul class="submenu">
-      <li><a href="grid.html">Grid</a></li>
-      <li><a href="buttons.html">Buttons</a></li>
-      <li><a href="vedeo.html">Video</a></li>
-    </ul>
-  </li>
-  <li>
     <div class="link">Pages<i class="fa fa-chevron-down"></i></div>
     <ul class="submenu">
       <li><a href="404.html">404</a></li>
       <li><a href="sign-in.html">Login</a></li>
       <li><a href="sign-up.html">Register</a></li>
      <li><a href="about.html">About Us</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="vedeo.html">Video</a></li>
     </ul>
   </li>
-    <li>
-    <div class="link"><a href="news.html">News</a></div>
+  <li>
+    <div class="link">News<i class="fa fa-chevron-down"></i></div>
+    <ul class="submenu">
+      <li><a href="news.html">News Standart</a></li>
+      <li><a href="news-grid.html">News Grid</a></li>
+      <li><a href="news-grid-3-column.html">News Grid 3 Column</a></li>
+    </ul>
   </li>
   <li>
     <div class="link"><a href="gallery.html">Gallery</a></div>
@@ -67,9 +66,6 @@
       <li><a href="single-product.html">Single Product</a></li>
       <li><a href="checkout.html">Checkout</a></li>
     </ul>
-  </li>
-  <li>
-    <div class="link"><a href="#">Donate</a></div>
   </li>
   <li>
     <div class="link"><a href="contacts.html">Contacts</a></div>
@@ -109,7 +105,7 @@
 		<div class="top-header-block">
 			<div class="container-fluid">
 				<div class="row">
-						<div class="col-md-6">
+					<div class="col-md-6">
 						<div class="top-contact">
 							<i class="fa fa-phone" aria-hidden="true"></i>
 							<span>+38(099)708-15-34</span>
@@ -155,28 +151,6 @@
 						</li>
 						<li class="menu-item">
 <div class="dropdown">
-  <button id="elements" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Elements
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="elements">
-    <li>
-							<a href="grid.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-Grid</a>
-    </li>
-    <li>
-							<a href="buttons.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-Buttons</a>
-    </li>
-    <li>
-							<a href="video.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-Video</a>
-    </li>
-  </ul>
-</div>
-						</li>
-						<li class="menu-item">
-<div class="dropdown">
   <button id="pages" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Pages
     <span class="caret"></span>
@@ -198,11 +172,38 @@ Register</a>
 							<a href="about.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
 About Us</a>
     </li>
+    <li>
+							<a href="grid.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Grid</a>
+    </li>
+    <li>
+							<a href="video.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+Video</a>
+    </li>
   </ul>
 </div>
 						</li>
 						<li class="menu-item">
-							<a href="news.html">News</a>
+<div class="dropdown">
+  <button id="shop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    News
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="shop">
+    <li>
+							<a href="news.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+News Standart</a>
+    </li>
+    <li>
+							<a href="news-grid.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+News Grid</a>
+    </li>
+    <li>
+							<a href="news-grid-3-column.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+News Grid 3 Column</a>
+    </li>
+  </ul>
+</div>
 						</li>
 						<li class="menu-item">
 							<a href="gallery.html">Gallery</a>
@@ -230,11 +231,8 @@ Single Product</a>
 							<a href="checkout.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>
 Checkout</a>
     </li>
-   </ul>
+  </ul>
 </div>
-						</li>
-						<li class="menu-item">
-							<a href="">Donate</a>
 						</li>
 						<li class="menu-item">
 							<a href="contacts.html">Contacts</a>
@@ -254,16 +252,18 @@ Checkout</a>
      <h1 class="page-title">Page news</h1>
      <ul>
      	<li><a href="index.html">Home</a></li>
-     	<li class="active">News</li>
+     	<li><a href="#">News</a></li>
+     	<li class="active">News Grid</li>
      </ul>
 		</div>
 	</div>
 </section>
 
-<section class="news-grid-3-column">
+<section class="news-grid">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-8">
+			<div class="col-md-6">
 				<div class="news-block">
 				<a href="single-news.html">
 					<img class="img-responsive" src="images/food-715539_1920.jpg" alt="" />
@@ -280,7 +280,7 @@ Checkout</a>
 					</div>
 					</div>
 				</div>
-							<div class="col-md-4">
+							<div class="col-md-6">
 				<div class="news-block">
 				<a href="single-news.html">
 					<img class="img-responsive" src="images/pastries-768715_1920.jpg" alt="" />
@@ -297,7 +297,7 @@ Checkout</a>
 					</div>
 				</div>
 				</div>
-							<div class="col-md-4">
+							<div class="col-md-6">
 				<div class="news-block">
 				<a href="single-news.html">
 					<img class="img-responsive" src="images/pizza-1150031_1920.jpg" alt="" />
@@ -314,7 +314,7 @@ Checkout</a>
 					</div>
 					</div>
 				</div>
-											<div class="col-md-4">
+											<div class="col-md-6">
 				<div class="news-block">
 				<a href="single-news.html">
 					<img class="img-responsive" src="images/food-715539_1920.jpg" alt="" />
@@ -322,40 +322,6 @@ Checkout</a>
 					<div class="content-news-block">
 						<h4><a class="title-post" href="single-news.html">Thinking about Spring</a></h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere expedita esse quas quibusdam nobis ea, iusto itaque eveniet corrupti maiores culpa mollitia molestias sit error consequatur numquam eius cum tempora.</p>
-						<div class="info-news-block">
-						<div class="row">
-						<div class="col-sm-6"><i class="fa fa-calendar" aria-hidden="true"></i><span>2 days ago</span></div>
-						<div class="col-sm-6"><i class="fa fa-user" aria-hidden="true"></i><span class="author-news">Ronald Austin</span></div>
-						</div>
-						</div>
-					</div>
-					</div>
-				</div>
-											<div class="col-md-4">
-				<div class="news-block">
-				<a href="single-news.html">
-					<img class="img-responsive" src="images/pastries-768715_1920.jpg" alt="" />
-			  </a>
-					<div class="content-news-block">
-						<h4><a class="title-post" href="single-news.html">3 Open-Ended Activities for Preschoolers</a></h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem animi alias minima blanditiis modi, itaque quisquam. Ipsam accusamus blanditiis soluta explicabo ratione distinctio perspiciatis, delectus earum! Corrupti quidem sit, qui!</p>
-						<div class="info-news-block">
-						<div class="row">
-						<div class="col-sm-6"><i class="fa fa-calendar" aria-hidden="true"></i><span>2 days ago</span></div>
-						<div class="col-sm-6"><i class="fa fa-user" aria-hidden="true"></i><span class="author-news">Ronald Austin</span></div>
-						</div>
-						</div>
-					</div>
-				</div>
-				</div>
-							<div class="col-md-4">
-				<div class="news-block">
-				<a href="single-news.html">
-					<img class="img-responsive" src="images/pizza-1150031_1920.jpg" alt="" />
-			  </a>
-					<div class="content-news-block">
-						<h4><a class="title-post" href="single-news.html">Exploring Light and Dark</a></h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo neque quidem expedita ipsum, modi in quos quaerat quam sapiente, assumenda maiores autem, incidunt dolor doloremque pariatur tenetur sequi eos necessitatibus.</p>
 						<div class="info-news-block">
 						<div class="row">
 						<div class="col-sm-6"><i class="fa fa-calendar" aria-hidden="true"></i><span>2 days ago</span></div>
@@ -374,6 +340,70 @@ Checkout</a>
                       <li><a href="#" aria-label="Next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
                     </ul>
         </div>
+			</div>
+			<div class="col-md-4">
+			<div class="side-bar">
+<form class="form-wrapper">
+    <input type="text" id="search" placeholder="Search for..." required>
+    <input type="submit" value="go" id="submit">
+</form>
+			<div class="categories">
+				<h4 class="title-small">Categories</h4>
+				<ul>
+					<li>
+						<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>News</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Preschool</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Education</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>School</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Activities</a>
+					</li>
+				</ul>
+		  </div>
+			<div class="archive-news">
+				<h4 class="title-small">Archive News</h4>
+	<ul>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Jun 2016</a>
+	</li>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Aug 2016</a>
+	</li>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Oct 2016</a>
+	</li>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Dec 2016</a>
+	</li>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Feb 2017</a>
+	</li>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Jul 2016</a>
+	</li>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Sep 2016</a>
+	</li>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Nov 2016</a>
+	</li>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Jan 2016</a>
+	</li>
+	<li>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Mar 2017</a>
+	</li>
+	</ul>
+		  </div>
+		  </div>
+			</div>	
 		</div>
 	</div>
 </section>
