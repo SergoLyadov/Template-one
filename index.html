@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/simplelightbox.min.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
 <!-- 		<link rel="stylesheet" type="text/css" href="css/styles.css"> -->
@@ -313,10 +314,12 @@ Checkout</a>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
+				<div class="animated" data-scroll="toggle(.slideInLeft, .invisible)">
 					<h2 class="title-big">About Our Center</h2>
 					<div class="content-block">
 						<p>We offer a play-based emergent curriculum complete with low teacher to child ratios. Come see our environment and how it is designed to promote exploration, adventure and imaginative play. We believe that children are active participants in their own learning. That’s why we encourage them to ask questions and explore the world around them.</p>
 						<a class="button button-transparent-v2" href="#">Learn More</a>
+					</div>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -747,9 +750,24 @@ Checkout</a>
 				</div>
 			</div>
 		</footer>
-
+<script src="js/ScrollTrigger.min.js"></script>
 		<script src="js/scripts-ini.js"></script>  
 <script src="js/parallax.js"></script>
+<script>
+window.counter = function() {
+	// this refers to the html element with the data-scroll-showCallback tag
+	var span = this.querySelector('span');
+	var current = parseInt(span.textContent);
+
+	span.textContent = current + 1;
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  var trigger = new ScrollTrigger({
+	  addHeight: true
+  });
+});
+</script>
 <script>
 	 var scene = document.getElementById('scene');
   var parallax = new Parallax(scene);
