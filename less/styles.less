@@ -1013,9 +1013,8 @@ input[type=checkbox] {
 	width: 45px;
 	z-index: 4;
 	&:hover {
-		-webkit-transition: 300ms;
-		background-color: @main_color;
-		transition: 300ms;
+box-shadow: 0 3px 15px 0 #000000;
+transition: 1000ms;
 	}
 }
 
@@ -2838,6 +2837,7 @@ footer {
 .tabs {
 	padding-top: 0;
 	.tab-content {
+			padding-top: 30px;
 		.description-item {
 			color: @txt_color;
 		}
@@ -2860,7 +2860,6 @@ footer {
 	}
 	.comment {
 		padding-left: 30px;
-		padding-top: 30px;
 	}
 	.comment-second-level {
 		padding-left: 100px;
@@ -3920,14 +3919,4 @@ button{
 
 .form-wrapper #submit::-moz-focus-inner {
 	border: 0;
-}
-
-.invisible {
-	transition: opacity 0.5s ease;
-	opacity: 0;
-}
-
-.visible {
-	transition: opacity 0.5s ease;
-	opacity: 1;
 }

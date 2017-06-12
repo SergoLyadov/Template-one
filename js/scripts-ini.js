@@ -139,7 +139,7 @@ nextArrow: jQuery('.next')
     });
   });
 
-jQuery('.multiple-items').slick({
+$('.multiple-items').slick({
   infinite: true,
       autoplay: true,
       autoplaySpeed: 2000,
@@ -176,7 +176,7 @@ jQuery('.multiple-items').slick({
             }
     }
     
-      jQuery(document).ready(function($){
+      $(document).ready(function($){
             var submitIcon = $('.searchbox-icon');
             var inputBox = $('.searchbox-input');
             var searchBox = $('.searchbox');
@@ -249,8 +249,8 @@ $('.center-slick').slick({
       }
     }
   ],
-  prevArrow: jQuery('.prev-program'),
-nextArrow: jQuery('.next-program')
+  prevArrow: $('.prev-program'),
+nextArrow: $('.next-program')
 });
 
 $(function() {
@@ -280,7 +280,7 @@ $(function() {
   var accordion = new Accordion($('#accordion'), false);
 });
 
- jQuery('.slick-slider').slick({
+ $('.slick-slider').slick({
   infinite: true,
   speed: 500,
   fade: true,
@@ -291,14 +291,14 @@ $(function() {
       nextArrow: $('.next-slider'),
 });
 
-  jQuery('.slider-for').slick({
+  $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
   asNavFor: '.slider-nav'
 });
-jQuery('.slider-nav').slick({
+$('.slider-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
@@ -308,7 +308,7 @@ jQuery('.slider-nav').slick({
   focusOnSelect: true
 });
 
-jQuery('.autoplay').slick({
+$('.autoplay').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
