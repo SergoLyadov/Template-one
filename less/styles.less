@@ -22,19 +22,6 @@
 	}
 }
 
-@keyframes btn-down {
-	20% {
-		margin-bottom: 5px;
-	}
-}
-
-@keyframes btn-down-hover {
-	100% {
-		color: @color_main;
-		font-size: 35px;
-	}
-}
-
 * {
 	outline: none;
 }
@@ -42,7 +29,7 @@ body {
 	font-family: @font_family_1;
 }
 label{
-	font-weight: normal;
+	font-weight: lighter;
 }
 .title-big {
 	color: @main_color;
@@ -77,6 +64,7 @@ label{
 }
 section {
 	padding: 100px 0 100px 0;
+	overflow: hidden;
 }
 .button-default {
 	border-radius: 5px;
@@ -1126,7 +1114,7 @@ transition: 1000ms;
 	text-align: center;
 	top: 45%;
 	transform: translate(-50%, -50%);
-	width: 800px;
+	width: 90%;
 	&:active{
 		cursor: move;
 	}
@@ -1142,18 +1130,29 @@ transition: 1000ms;
 .slick-slider{
 	.slick-active{
 		h2{
-			animation: zoomIn 2s;
 			opacity: 0.9;
 		}
 		.btn-left{
-			animation: fadeInLeft 2s;
-			margin-bottom: 10px;
-
+			animation-name: opacity;
+			animation-duration: 2s;
+				animation-delay: 1s;
 		}
 		.btn-right{
-			animation: fadeInRight 2s;
+			animation-name: opacity;
+			animation-duration: 2s;
+				animation-delay: 1s;
+		}
+		.btn-left{
+			animation-name: fadeIn;
+			animation-duration: 2s;
+				animation-delay: 1s;
 			margin-bottom: 10px;
-
+		}
+		.btn-right{
+			animation-name: fadeIn;
+			animation-duration: 2s;
+			animation-delay: 1s;
+			margin-bottom: 10px;
 		}
 		@media (max-width: 992px) {
 			.btn-left, .btn-right{
@@ -1161,7 +1160,7 @@ transition: 1000ms;
 			}
 		}
 		p{
-			animation: zoomIn 2s;
+
 		}
 	}
 	h2{
@@ -1220,28 +1219,6 @@ transition: 1000ms;
 		}
 	}
 }
-}
-
-.btn-down{
-	position: relative;
-}
-.btn-down{
-	background-color: transparent;
-	border: none;
-	bottom: 20px;
-	color: @white;
-	left: 50%;
-	opacity: 0.5;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	&:hover{
-		.fa{
-			animation: btn-down-hover 1s infinite alternate;
-		}
-	}
-	.fa{
-		animation: btn-down 1s infinite alternate;
-	}
 }
 .section-about {
 	h2 {
@@ -3539,6 +3516,27 @@ button{
 
 		}
 	}
+}
+.gallery-page{
+	.slick-prev::before, .slick-next::before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: @black;
+}
+}
+.slider-for-gallery{
+	width: 50%;
+	margin: auto;
+}
+.slider-nav-gallery{
+	width: 50%;
+	margin: auto;
+}
+.single-item{
+	width: 50%;
+	margin: auto;
 }
 .video {
 	.slider-nav{
