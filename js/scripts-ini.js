@@ -1,3 +1,5 @@
+
+
 jQuery(function($){
   $(window).scroll(function(){
     var winTop = $(window).scrollTop();
@@ -403,7 +405,7 @@ $(function() {
 
  $('.slick-slider').slick({
   infinite: true,
-  speed: 500,
+  speed: 800,
   cssEase: 'linear',
       autoplay: true,
       autoplaySpeed: 5000,
